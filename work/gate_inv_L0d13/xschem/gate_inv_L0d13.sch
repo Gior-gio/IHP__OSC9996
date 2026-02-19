@@ -1,8 +1,9 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 670 -370 670 -320 {lab=VOUT}
 N 600 -290 630 -290 {lab=VIN}
@@ -19,7 +20,7 @@ C {ipin.sym} 670 -220 3 0 {name=p2 lab=VSS}
 C {ipin.sym} 560 -370 0 0 {name=p3 lab=VIN
 }
 C {opin.sym} 720 -370 0 0 {name=p4 lab=VOUT}
-C {sg13g2_pr/sg13_lv_pmos.sym} 650 -460 2 1 {name=M2
+C {sg13g2_pr/sg13_lv_pmos.sym} 650 -460 0 0 {name=M2
 l=0.13u
 w=2u
 ng=1

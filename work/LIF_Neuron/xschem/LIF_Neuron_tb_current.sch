@@ -5,14 +5,13 @@ V {}
 S {}
 F {}
 E {}
-L 4 640 -720 640 -540 {}
-L 4 640 -540 1020 -540 {}
-L 4 1020 -720 1020 -540 {}
-L 4 640 -720 1020 -720 {}
-P 4 5 560 -780 1100 -780 1100 -180 560 -180 560 -780 {}
-T {EXTERNAL RESISTOR} 710 -760 0 0 0.4 0.4 {}
-T {NEURON 1
-} 780 -820 0 0 0.4 0.4 {}
+L 4 580 -680 800 -680 {}
+L 4 580 -580 800 -580 {}
+L 4 580 -680 580 -580 {}
+L 4 800 -680 800 -580 {}
+P 4 5 540 -780 1420 -780 1420 -400 540 -400 540 -780 {}
+T {EXTERNAL RESISTOR} 580 -720 0 0 0.4 0.4 {}
+T {LIF NEURON} 1070 -710 0 0 0.4 0.4 {}
 N 100 -260 100 -240 {lab=GND}
 N 200 -260 200 -240 {lab=GND}
 N 300 -260 300 -240 {lab=GND}
@@ -25,26 +24,26 @@ N 100 -380 100 -320 {lab=#net4}
 N 100 -460 100 -440 {lab=VDD}
 N 200 -460 200 -440 {lab=VSS}
 N 300 -460 300 -440 {lab=RST}
-N 730 -640 790 -640 {lab=Vctr}
-N 850 -640 910 -640 {lab=Vx}
-N 920 -500 920 -460 {lab=VDD}
-N 920 -260 920 -220 {lab=VSS}
-N 750 -260 750 -220 {lab=Vref}
-N 600 -400 640 -400 {lab=Vx}
-N 600 -320 640 -320 {lab=RST}
-N 1000 -400 1060 -400 {lab=MEM}
-N 1000 -320 1060 -320 {lab=SPIKE}
+N 600 -620 660 -620 {lab=Vctr}
+N 1220 -720 1220 -680 {lab=VDD}
+N 1220 -480 1220 -440 {lab=VSS}
+N 1050 -480 1050 -440 {lab=Vref}
+N 900 -540 940 -540 {lab=RST}
+N 1300 -620 1360 -620 {lab=MEM}
+N 1300 -540 1360 -540 {lab=SPIKE}
 N 100 -780 100 -730 {lab=Vref}
 N 200 -780 200 -730 {lab=Vctr}
 N 200 -670 200 -610 {lab=#net5}
-N 460 -780 460 -700 {lab=SPIKE}
-N 460 -640 460 -590 {lab=VSS}
-C {code.sym} 372.5 -457.5 0 0 {name=CODE only_toplevel=false 
+N 440 -780 440 -700 {lab=SPIKE}
+N 440 -640 440 -590 {lab=VSS}
+N 440 -480 440 -460 {lab=VSS}
+N 720 -620 940 -620 {lab=Vx}
+C {code.sym} 532.5 -317.5 0 0 {name=CODE only_toplevel=false 
 value="
 
 .param VDD = 1.2
 .param VSS = 0
-.param vctr = 1
+.param vctr = 1.2
 .param vref = 0
 .param Cload = 0.1p
 .param Rsource = 10
@@ -61,29 +60,23 @@ value="
 .control
 
 * >> Variables <<
-let Vhigh = 0.8
+let Vhigh = 0.45
 let Vmid = Vhigh * 0.5
-
-let tstop = 50n
-let tstep = tstop/1k
-
+let tstop = 0.2u
+let tstep = tstop/10k
 
 * Run transient analysis
 tran $&tstep $&tstop
 
-* Avarage current
-
+* Average current
 let IDD = -1*i(VSP)
 let i_VINT = @v.xLIF.VINT[i]
 let i_VCOMP = @v.xLIF.VCOMP[i]
 let i_VSPIKE = @v.xLIF.VSPIKE[i]
 
-
 meas tran i_VINT AVG i_VINT from=tstep to=tstop
 meas tran i_VCOMP AVG i_VCOMP from=tstep to=tstop
 meas tran i_VSPIKE AVG i_VSPIKE from=tstep to=tstop
-
-
 meas tran I_avg AVG IDD from=tstep to=tstop
 let P_avg = abs(I_avg*Vhigh)
 
@@ -94,20 +87,18 @@ let E_spk = P_avg/F_spk
 *Print results
 print F_spk I_avg P_avg E_spk
 
-
 *Print results
-
-print i_VINT i_COMP i_VSPIKE
+print i_VINT i_VCOMP i_VSPIKE
 
 * Plots
 plot v(Vctr) v(Vref) v(RST)
-plot v(MEM) v(Vx)
+plot v(MEM) v(Vx) v(vctr)
 plot v(xLIF.COMP)
 plot v(SPIKE)
 
 .endc
 "}
-C {lab_wire.sym} 920 -500 0 1 {name=p5 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1220 -720 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {devices/vsource.sym} 300 -290 0 0 {name=VRESET value="pwl 0 \{VDD\} 10n \{VDD\} 11n 0"}
 C {lab_wire.sym} 300 -460 0 1 {name=p12 sig_type=std_logic lab=RST}
 C {gnd.sym} 300 -240 0 0 {name=l7 lab=GND}
@@ -122,18 +113,17 @@ C {devices/vsource.sym} 100 -580 0 0 {name=VR value=\{vref\}}
 C {devices/gnd.sym} 100 -530 0 0 {name=l2 lab=GND}
 C {devices/lab_wire.sym} 100 -780 0 0 {name=p10 sig_type=std_logic lab=Vref}
 C {devices/vsource.sym} 200 -580 0 0 {name=VC value="pwl 0 \{vref\} 20n \{vref\} 21n \{vctr\}"}
-C {lab_wire.sym} 630 -320 0 0 {name=p37 sig_type=std_logic lab=RST}
-C {lab_wire.sym} 1010 -320 0 1 {name=p47 sig_type=std_logic lab=SPIKE}
-C {lab_wire.sym} 920 -220 2 0 {name=p21 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 750 -240 0 0 {name=p33 sig_type=std_logic lab=Vref}
-C {lab_wire.sym} 630 -400 0 0 {name=p34 sig_type=std_logic lab=Vx}
-C {lab_wire.sym} 740 -640 0 1 {name=p2 sig_type=std_logic lab=Vctr}
-C {lab_wire.sym} 860 -640 0 1 {name=p3 sig_type=std_logic lab=Vx}
-C {lab_wire.sym} 1010 -400 0 1 {name=p7 sig_type=std_logic lab=MEM}
-C {lab_wire.sym} 460 -590 3 0 {name=p49 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 460 -720 3 1 {name=p50 sig_type=std_logic lab=SPIKE}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_Neuron/xschem/LIF_neuron.sym} 510 -130 0 0 {name=xLIF}
-C {devices/code_shown.sym} 55 -152.5 0 0 {name=MODEL1 only_toplevel=true
+C {lab_wire.sym} 930 -540 0 0 {name=p37 sig_type=std_logic lab=RST}
+C {lab_wire.sym} 1310 -540 0 1 {name=p47 sig_type=std_logic lab=SPIKE}
+C {lab_wire.sym} 1220 -440 2 0 {name=p21 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1050 -460 0 0 {name=p33 sig_type=std_logic lab=Vref}
+C {lab_wire.sym} 930 -620 0 0 {name=p34 sig_type=std_logic lab=Vx}
+C {lab_wire.sym} 610 -620 0 1 {name=p2 sig_type=std_logic lab=Vctr}
+C {lab_wire.sym} 1310 -620 0 1 {name=p7 sig_type=std_logic lab=MEM}
+C {lab_wire.sym} 440 -590 3 0 {name=p49 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 440 -720 3 1 {name=p50 sig_type=std_logic lab=SPIKE}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_Neuron/xschem/LIF_neuron.sym} 810 -350 0 0 {name=xLIF}
+C {devices/code_shown.sym} 685 -302.5 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
 value="
 .lib cornerMOSlv.lib mos_ff
@@ -165,14 +155,23 @@ value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/capa.sym} 460 -670 0 0 {name=Cload
+C {devices/capa.sym} 440 -670 0 0 {name=Cload
 m=1
 value=\{Cload\}
 footprint=1206
 device="ceramic capacitor"}
-C {res.sym} 820 -640 3 0 {name=RIN
+C {res.sym} 690 -620 3 0 {name=RIN
 value=100k
 footprint=1206
 device=resistor
 m=1}
 C {devices/vsource.sym} 100 -290 0 0 {name=VSP value=\{VDD\}}
+C {noconn.sym} 1360 -620 2 0 {name=l3}
+C {sg13g2_pr/sub.sym} 440 -400 0 0 {name=l6 lab=SUB}
+C {sg13g2_pr/ptap1.sym} 440 -430 0 0 {name=RTAP
+model=ptap1
+spiceprefix=X
+w=0.78e-6
+l=0.78e-6
+}
+C {lab_wire.sym} 440 -470 0 0 {name=p11 sig_type=std_logic lab=VSS}

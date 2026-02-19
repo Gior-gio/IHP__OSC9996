@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_L0d13/xschem/gate_buff_L0d13.sch
+.subckt gate_buff_L0d13 VDD VIN VOUT VSS
+*.PININFO VDD:I VIN:I VSS:I VOUT:O
+M1 net1 VIN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M2 VDD VIN net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M3 VOUT net1 VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=3
+M4 VDD net1 VOUT VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=3
+.ends

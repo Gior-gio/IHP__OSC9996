@@ -1,8 +1,9 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 590 -350 590 -300 {lab=#net1}
 N 520 -270 550 -270 {lab=VIN}
@@ -36,7 +37,7 @@ m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 570 -440 2 1 {name=M2
+C {sg13g2_pr/sg13_lv_pmos.sym} 570 -440 0 0 {name=M2
 l=0.13u
 w=2u
 ng=1
@@ -60,7 +61,7 @@ m=3
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 750 -440 2 1 {name=M4
+C {sg13g2_pr/sg13_lv_pmos.sym} 750 -440 0 0 {name=M4
 l=0.13u
 w=2u
 ng=1

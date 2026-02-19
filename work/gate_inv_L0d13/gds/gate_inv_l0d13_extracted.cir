@@ -1,0 +1,8 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 04/02/2026 04:22
+
+.SUBCKT gate_inv_l0d13 VSS VOUT VIN VDD
+M$1 VSS VIN VOUT VSS sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$2 VDD VIN VOUT VDD sg13_lv_pmos L=0.13u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u
+.ENDS gate_inv_l0d13

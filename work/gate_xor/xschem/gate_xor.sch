@@ -1,8 +1,9 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 650 -720 650 -640 {lab=#net1}
 N 910 -720 910 -640 {lab=#net2}
@@ -94,7 +95,7 @@ C {lab_wire.sym} 990 -610 2 0 {name=p19 sig_type=std_logic lab=B
 }
 C {ipin.sym} 780 -860 1 0 {name=p20 lab=VDD}
 C {opin.sym} 1000 -500 0 0 {name=p21 lab=S}
-C {sg13g2_pr/sg13_lv_pmos.sym} 630 -750 2 1 {name=M2
+C {sg13g2_pr/sg13_lv_pmos.sym} 630 -750 0 0 {name=M2
 l=0.13u
 w=2u
 ng=1
@@ -102,7 +103,7 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 630 -610 2 1 {name=M1
+C {sg13g2_pr/sg13_lv_pmos.sym} 630 -610 0 0 {name=M1
 l=0.13u
 w=2u
 ng=1
@@ -110,7 +111,7 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 930 -750 2 0 {name=M4
+C {sg13g2_pr/sg13_lv_pmos.sym} 930 -750 0 1 {name=M4
 l=0.13u
 w=2u
 ng=1
@@ -118,7 +119,7 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 930 -610 2 0 {name=M5
+C {sg13g2_pr/sg13_lv_pmos.sym} 930 -610 0 1 {name=M5
 l=0.13u
 w=2u
 ng=1

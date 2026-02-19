@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sch
+.subckt integrator_curstav_inv VDD VcrtP A B VcrtN VSS RST
+*.PININFO VDD:I VSS:I A:I B:O VcrtP:I VcrtN:I RST:I
+M1 B A net2 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M2 net2 VcrtN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M3 B A net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M4 net1 VcrtP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M5 B VDD VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M6 B RST VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+.ends

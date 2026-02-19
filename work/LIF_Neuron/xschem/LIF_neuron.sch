@@ -11,7 +11,6 @@ N 950 -70 960 -60 {lab=INT_RST}
 N 930 -70 950 -70 {lab=INT_RST}
 N 920 -60 930 -70 {lab=INT_RST}
 N 440 -350 450 -350 {lab=MEM}
-N 440 -350 440 -240 {lab=MEM}
 N 140 -240 180 -240 {lab=INT_RST}
 N 80 -220 180 -220 {lab=Vref}
 N 280 -170 280 -20 {lab=VSS}
@@ -21,12 +20,9 @@ N 260 -60 270 -70 {lab=INT_RST}
 N 270 -70 290 -70 {lab=INT_RST}
 N 290 -70 300 -60 {lab=INT_RST}
 N 600 -440 940 -440 {lab=VDD}
-N 440 -240 500 -240 {lab=MEM}
 N 390 -240 440 -240 {lab=MEM}
 N 600 -20 940 -20 {lab=VSS}
-N 600 -160 600 -20 {lab=VSS}
 N 280 -20 600 -20 {lab=VSS}
-N 760 -240 830 -240 {lab=COMP}
 N 940 -130 940 -20 {lab=VSS}
 N 620 -60 920 -60 {lab=INT_RST}
 N 610 -70 620 -60 {lab=INT_RST}
@@ -39,13 +35,12 @@ N 960 -60 1080 -60 {lab=INT_RST}
 N 140 -240 140 -60 {lab=INT_RST}
 N 940 -440 940 -410 {lab=VDD}
 N 940 -350 940 -290 {lab=#net1}
-N 600 -350 600 -320 {lab=#net2}
+N 600 -350 600 -300 {lab=#net2}
 N 600 -440 600 -410 {lab=VDD}
 N 280 -440 600 -440 {lab=VDD}
 N 280 -350 280 -320 {lab=#net3}
 N 280 -440 280 -410 {lab=VDD}
 N 80 -440 280 -440 {lab=VDD}
-N 500 -560 500 -540 {lab=VSS}
 N 140 -260 180 -260 {lab=Vx}
 N 310 -500 440 -500 {lab=MEM}
 N 140 -500 250 -500 {lab=Vx}
@@ -60,9 +55,11 @@ N 430 -450 430 -430 {lab=MEM}
 N 430 -450 440 -460 {lab=MEM}
 N 440 -500 440 -460 {lab=MEM}
 N 440 -420 440 -350 {lab=MEM}
+N 440 -240 520 -240 {lab=MEM}
+N 440 -350 440 -240 {lab=MEM}
+N 680 -240 830 -240 {lab=COMP}
+N 600 -180 600 -20 {lab=VSS}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator/xschem/integrator.sym} 120 -80 0 0 {name=xINT}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/comparator_inv/xschem/comparator_inv.sym} 600 -240 0 0 {name=xCOMP
-}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/spike_generator/xschem/spike_generator.sym} 940 -210 0 0 {name=xSPK}
 C {iopin.sym} 80 -440 0 1 {name=p2 lab=VDD}
 C {iopin.sym} 80 -20 0 1 {name=p1 lab=VSS}
@@ -88,11 +85,4 @@ m=1
 body=SUB
 
 }
-C {sg13g2_pr/sub.sym} 500 -480 0 0 {name=l6 lab=SUB}
-C {sg13g2_pr/ptap1.sym} 500 -510 0 0 {name=RTAP
-model=ptap1
-spiceprefix=X
-w=0.78e-6
-l=0.78e-6
-}
-C {lab_wire.sym} 500 -550 0 0 {name=p11 sig_type=std_logic lab=VSS}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/threshold_circuit/xschem/threshold_comparator.sym} 595 -240 0 0 {name=x1}

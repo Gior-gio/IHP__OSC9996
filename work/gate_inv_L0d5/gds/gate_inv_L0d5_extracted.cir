@@ -1,6 +1,0 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 16/11/2025 02:17
-
-.SUBCKT gate_inv_L0d5 VSS B A VDD
-M$1 B A VDD VDD pfet_03v3 L=0.5U W=6U AS=3.48P AD=3.48P PS=11.32U PD=11.32U
-M$3 B A VSS VSS nfet_03v3 L=0.5U W=2U AS=1.16P AD=1.16P PS=5.32U PD=5.32U
-.ENDS gate_inv_L0d5

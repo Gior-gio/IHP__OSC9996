@@ -14,7 +14,10 @@ N 700 -540 700 -480 {lab=VDD}
 N 240 -380 300 -380 {lab=B}
 N 240 -440 300 -440 {lab=A}
 N 990 -410 1040 -410 {lab=VOUT}
-N 960 -340 960 -320 {lab=VSS}
+N 920 -250 950 -250 {lab=VSS}
+N 920 -250 920 -220 {lab=VSS}
+N 1010 -250 1030 -250 {lab=VSS}
+N 1030 -250 1030 -230 {lab=VSS}
 C {title.sym} 160 -40 0 0 {name=l1 author="Juan pablo luengas -- Nicolas Velasco"}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_xor/xschem/gate_xor.sym} 250 -220 0 0 {name=x1}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 440 -230 0 0 {name=x2}
@@ -34,11 +37,14 @@ C {ipin.sym} 410 -540 1 0 {name=p4 lab=VDD}
 C {opin.sym} 1040 -410 0 0 {name=p5 lab=VOUT}
 C {lab_wire.sym} 700 -540 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 700 -290 2 1 {name=p7 sig_type=std_logic lab=VSS}
-C {sg13g2_pr/sub.sym} 960 -260 0 0 {name=l6 lab=SUB}
-C {sg13g2_pr/ptap1.sym} 960 -290 0 0 {name=RTAP
-model=ptap1
+C {sg13g2_pr/rppd.sym} 980 -250 3 0 {name=RXOR1
+w=0.5e-6
+l=0.5e-6
+model=rppd
+body=SUB
 spiceprefix=X
-w=0.78e-6
-l=0.78e-6
+b=0
+m=10
 }
-C {lab_wire.sym} 960 -330 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 920 -220 2 1 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1030 -230 2 1 {name=p9 sig_type=std_logic lab=VSS}

@@ -1,0 +1,26 @@
+** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_ring-oscillator/xschem/integrator_ring-oscillator.sch
+.subckt integrator_ring-oscillator VDD VSS Vctr RST A[4] A[3] A[2] A[1] A[0]
+*.PININFO VDD:B Vctr:B VSS:B RST:B A[4:0]:B
+x6 VDD VcrtPP A[0] A[1] Vctr VSS RST integrator_curstav_inv
+x7 VDD VcrtPP A[1] A[2] Vctr VSS VSS integrator_curstav_inv
+x8 VDD VcrtPP A[2] A[3] Vctr VSS RST integrator_curstav_inv
+x9 VDD VcrtPP A[3] A[4] Vctr VSS VSS integrator_curstav_inv
+x10 VDD VcrtPP A[4] A[0] Vctr VSS RST integrator_curstav_inv
+M1 VcrtPP Vctr VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M3 VcrtPP VcrtPP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends
+
+* expanding   symbol:  /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sym #
+*+ of pins=7
+** sym_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sym
+** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sch
+.subckt integrator_curstav_inv VDD VcrtP A B VcrtN VSS RST
+*.PININFO VDD:I VSS:I A:I B:O VcrtP:I VcrtN:I RST:I
+M1 B A net2 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M2 net2 VcrtN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M3 B A net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M4 net1 VcrtP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M5 B VDD VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M6 B RST VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+.ends
+

@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 L 4 1160 -110 1160 -30 {}
 P 4 5 1060 -150 1060 -110 1360 -110 1360 -150 1060 -150 {}
