@@ -1,0 +1,45 @@
+* NGSPICE file created from edge_detector.ext - technology: ihp-sg13g2
+
+.subckt pmos$1$10 a_n932_n1036# a_n906_n1000# a_n1000_n1000# w_n1062_n1062#
+X0 a_n906_n1000# a_n932_n1036# a_n1000_n1000# w_n1062_n1062# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+.ends
+
+.subckt pmos$1$9 a_n932_n1036# a_n802_n1000# a_n1000_n1000# w_n1062_n1062#
+X0 a_n802_n1000# a_n932_n1036# a_n1000_n1000# w_n1062_n1062# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+.ends
+
+.subckt nmos$5 a_n932_n1036# a_n802_n1000# VSUB a_n1000_n1000#
+X0 a_n802_n1000# a_n932_n1036# a_n1000_n1000# VSUB sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+.ends
+
+.subckt pmos$1$8 a_n932_n1036# a_n802_n1000# a_n1000_n1000# w_n1062_n1062#
+X0 a_n802_n1000# a_n932_n1036# a_n1000_n1000# w_n1062_n1062# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+.ends
+
+.subckt nmos$4 a_n932_n1036# a_n802_n1000# VSUB a_n1000_n1000#
+X0 a_n802_n1000# a_n932_n1036# a_n1000_n1000# VSUB sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+.ends
+
+.subckt nmos$1$5 a_n932_n1036# VSUB a_n906_n1000# a_n1000_n1000#
+X0 a_n906_n1000# a_n932_n1036# a_n1000_n1000# VSUB sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+.ends
+
+.subckt edge_detector IN OUT VDD VSS
+Xpmos$1$10_0 a_2116_557# OUT VDD VDD pmos$1$10
+Xpmos$1$10_1 a_2050_461# a_2116_557# VDD VDD pmos$1$10
+Xpmos$1$9_0 a_1546_468# a_2050_461# VDD VDD pmos$1$9
+Xpmos$1$10_2 IN a_2116_557# VDD VDD pmos$1$10
+Xnmos$5_0 a_1546_468# a_2050_461# VSS VSS nmos$5
+Xpmos$1$8_0 a_1208_465# a_1546_468# VDD VDD pmos$1$8
+Xpmos$1$8_1 a_870_467# a_1208_465# VDD VDD pmos$1$8
+Xpmos$1$8_2 a_532_468# a_870_467# VDD VDD pmos$1$8
+Xpmos$1$8_3 IN a_532_468# VDD VDD pmos$1$8
+Xnmos$4_0 a_1208_465# a_1546_468# VSS VSS nmos$4
+Xnmos$1$5_0 a_2050_461# VSS VSS nmos$1$5_2/a_n1000_n1000# nmos$1$5
+Xnmos$4_1 a_870_467# a_1208_465# VSS VSS nmos$4
+Xnmos$1$5_1 a_2116_557# VSS VSS OUT nmos$1$5
+Xnmos$1$5_2 IN VSS a_2116_557# nmos$1$5_2/a_n1000_n1000# nmos$1$5
+Xnmos$4_2 a_532_468# a_870_467# VSS VSS nmos$4
+Xnmos$4_3 IN a_532_468# VSS VSS nmos$4
+.ends
+

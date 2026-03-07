@@ -1,0 +1,131 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/edge_detector/runs/run_2026-02-26_17-44-04/parameters/mc_variations/run_0/run_61/cace_edge_detector_tb.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net3                                         0
+net1                                       1.2
+net2                                         0
+in                                 1.00812e-08
+vss                                1.13676e-07
+vdd                                        1.2
+out                                2.10731e-07
+vsn#branch                         2.27352e-09
+vsp#branch                        -2.47515e-09
+vin#branch                         2.01625e-10
+
+ Reference value :  0.00000e+00
+ Reference value :  2.00560e-10
+ Reference value :  4.36560e-10
+ Reference value :  5.94560e-10
+ Reference value :  7.82560e-10
+ Reference value :  8.46560e-10
+ Reference value :  1.06856e-09
+ Reference value :  1.32056e-09
+ Reference value :  1.35256e-09
+ Reference value :  1.56856e-09
+ Reference value :  1.88456e-09
+ Reference value :  2.05856e-09
+ Reference value :  2.24856e-09
+ Reference value :  2.44856e-09
+ Reference value :  2.67456e-09
+ Reference value :  2.88256e-09
+ Reference value :  3.24256e-09
+ Reference value :  3.54656e-09
+ Reference value :  3.70456e-09
+ Reference value :  3.92656e-09
+ Reference value :  4.20256e-09
+ Reference value :  4.35656e-09
+ Reference value :  4.55056e-09
+ Reference value :  4.85656e-09
+ Reference value :  5.09656e-09
+ Reference value :  5.36856e-09
+ Reference value :  5.60256e-09
+ Reference value :  5.79056e-09
+ Reference value :  5.98256e-09
+ Reference value :  6.30056e-09
+ Reference value :  6.53056e-09
+ Reference value :  6.83656e-09
+ Reference value :  7.13056e-09
+ Reference value :  7.38856e-09
+ Reference value :  7.58456e-09
+ Reference value :  7.92456e-09
+ Reference value :  8.12256e-09
+ Reference value :  8.30056e-09
+ Reference value :  8.62256e-09
+ Reference value :  8.92056e-09
+ Reference value :  9.11056e-09
+ Reference value :  9.39656e-09
+ Reference value :  9.69056e-09
+ Reference value :  9.93056e-09
+ Reference value :  1.00510e-08
+ Reference value :  1.02470e-08
+ Reference value :  1.05170e-08
+ Reference value :  1.06390e-08
+ Reference value :  1.07910e-08
+ Reference value :  1.10490e-08
+ Reference value :  1.12670e-08
+ Reference value :  1.14410e-08
+ Reference value :  1.16230e-08
+ Reference value :  1.17150e-08
+ Reference value :  1.19630e-08
+ Reference value :  1.21070e-08
+ Reference value :  1.22950e-08
+ Reference value :  1.25090e-08
+ Reference value :  1.27610e-08
+ Reference value :  1.29910e-08
+ Reference value :  1.31550e-08
+ Reference value :  1.32770e-08
+ Reference value :  1.34430e-08
+ Reference value :  1.35830e-08
+ Reference value :  1.36890e-08
+ Reference value :  1.36950e-08
+ Reference value :  1.36970e-08
+ Reference value :  1.37270e-08
+ Reference value :  1.39430e-08
+ Reference value :  1.41690e-08
+ Reference value :  1.44370e-08
+ Reference value :  1.46450e-08
+ Reference value :  1.47750e-08
+ Reference value :  1.49390e-08
+ Reference value :  1.52590e-08
+ Reference value :  1.54370e-08
+ Reference value :  1.57130e-08
+ Reference value :  1.59470e-08
+ Reference value :  1.59610e-08
+ Reference value :  1.59670e-08
+ Reference value :  1.59770e-08
+ Reference value :  1.59810e-08
+ Reference value :  1.59850e-08
+ Reference value :  1.60110e-08
+ Reference value :  1.62470e-08
+ Reference value :  1.63910e-08
+ Reference value :  1.66490e-08
+ Reference value :  1.69930e-08
+ Reference value :  1.72730e-08
+ Reference value :  1.75250e-08
+ Reference value :  1.78270e-08
+ Reference value :  1.80430e-08
+ Reference value :  1.81730e-08
+ Reference value :  1.84170e-08
+ Reference value :  1.87550e-08
+ Reference value :  1.89310e-08
+ Reference value :  1.91450e-08
+ Reference value :  1.93930e-08
+ Reference value :  1.96890e-08
+ Reference value :  1.98050e-08
+ Reference value :  1.99450e-08
+No. of Data Rows : 10014
+t_rise              =  1.014618e-08
+t_fall              =  1.131732e-08
+Note: Simulation executed from .control section 

@@ -1,0 +1,121 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/edge_detector/runs/run_2026-02-26_17-44-04/parameters/mc_variations/run_0/run_79/cace_edge_detector_tb.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net3                                         0
+net1                                       1.2
+net2                                         0
+in                                  1.0246e-08
+vss                                5.78032e-08
+vdd                                        1.2
+out                                9.06124e-08
+vsn#branch                         1.15606e-09
+vsp#branch                        -1.36099e-09
+vin#branch                          2.0492e-10
+
+ Reference value :  0.00000e+00
+ Reference value :  2.60560e-10
+ Reference value :  3.60560e-10
+ Reference value :  5.38560e-10
+ Reference value :  7.80560e-10
+ Reference value :  1.07656e-09
+ Reference value :  1.27656e-09
+ Reference value :  1.56656e-09
+ Reference value :  1.89456e-09
+ Reference value :  2.02656e-09
+ Reference value :  2.23656e-09
+ Reference value :  2.52256e-09
+ Reference value :  2.74056e-09
+ Reference value :  2.85856e-09
+ Reference value :  3.07456e-09
+ Reference value :  3.32856e-09
+ Reference value :  3.59256e-09
+ Reference value :  3.87256e-09
+ Reference value :  4.05856e-09
+ Reference value :  4.08256e-09
+ Reference value :  4.15056e-09
+ Reference value :  4.47856e-09
+ Reference value :  4.70256e-09
+ Reference value :  4.97056e-09
+ Reference value :  5.30656e-09
+ Reference value :  5.48456e-09
+ Reference value :  5.75456e-09
+ Reference value :  6.08856e-09
+ Reference value :  6.29856e-09
+ Reference value :  6.52256e-09
+ Reference value :  6.83856e-09
+ Reference value :  7.04256e-09
+ Reference value :  7.23456e-09
+ Reference value :  7.46656e-09
+ Reference value :  7.74656e-09
+ Reference value :  7.94856e-09
+ Reference value :  8.23256e-09
+ Reference value :  8.50656e-09
+ Reference value :  8.59856e-09
+ Reference value :  8.73656e-09
+ Reference value :  8.88656e-09
+ Reference value :  9.01056e-09
+ Reference value :  9.12256e-09
+ Reference value :  9.32256e-09
+ Reference value :  9.45656e-09
+ Reference value :  9.68056e-09
+ Reference value :  9.95856e-09
+ Reference value :  1.01190e-08
+ Reference value :  1.02990e-08
+ Reference value :  1.03330e-08
+ Reference value :  1.04270e-08
+ Reference value :  1.05990e-08
+ Reference value :  1.08130e-08
+ Reference value :  1.10710e-08
+ Reference value :  1.12070e-08
+ Reference value :  1.14310e-08
+ Reference value :  1.17310e-08
+ Reference value :  1.19650e-08
+ Reference value :  1.21890e-08
+ Reference value :  1.24930e-08
+ Reference value :  1.27610e-08
+ Reference value :  1.29910e-08
+ Reference value :  1.33050e-08
+ Reference value :  1.36130e-08
+ Reference value :  1.37950e-08
+ Reference value :  1.39950e-08
+ Reference value :  1.42730e-08
+ Reference value :  1.43150e-08
+ Reference value :  1.45590e-08
+ Reference value :  1.47750e-08
+ Reference value :  1.49270e-08
+ Reference value :  1.51410e-08
+ Reference value :  1.54630e-08
+ Reference value :  1.56330e-08
+ Reference value :  1.57670e-08
+ Reference value :  1.60490e-08
+ Reference value :  1.63050e-08
+ Reference value :  1.64250e-08
+ Reference value :  1.67310e-08
+ Reference value :  1.70450e-08
+ Reference value :  1.72470e-08
+ Reference value :  1.74050e-08
+ Reference value :  1.76790e-08
+ Reference value :  1.79890e-08
+ Reference value :  1.82430e-08
+ Reference value :  1.85730e-08
+ Reference value :  1.89150e-08
+ Reference value :  1.91290e-08
+ Reference value :  1.94570e-08
+ Reference value :  1.96850e-08
+ Reference value :  1.99050e-08
+No. of Data Rows : 10014
+t_rise              =  1.014859e-08
+t_fall              =  1.134140e-08
+Note: Simulation executed from .control section 

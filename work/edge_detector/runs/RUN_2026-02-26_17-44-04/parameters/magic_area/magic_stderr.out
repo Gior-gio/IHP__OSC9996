@@ -1,0 +1,2 @@
+Error while reading cell "edge_detector" (byte position 30020): Warning: cell "pmos$1$10" placed on top of itself.  Ignoring the extra one.
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1

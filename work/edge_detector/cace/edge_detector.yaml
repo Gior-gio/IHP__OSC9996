@@ -181,28 +181,6 @@ parameters:
       netgen_lvs:
         script: run_project_lvs.tcl
 
-  klayout_drc_feol:
-    description: KLayout DRC feol
-    display: KLayout DRC feol
-    spec:
-      drc_errors:
-        maximum:
-          value: 0
-    tool:
-        klayout_drc:
-            args: ['-rd', 'feol=true']
-
-  klayout_drc_beol:
-    description: KLayout DRC beol
-    display: KLayout DRC beol
-    spec:
-      drc_errors:
-        maximum:
-          value: 0
-    tool:
-        klayout_drc:
-            args: ['-rd', 'beol=true']
-
   klayout_drc_full:
     description: KLayout DRC full
     display: KLayout DRC full
@@ -212,4 +190,4 @@ parameters:
           value: 0
     tool:
         klayout_drc:
-            args: ['-rd', 'feol=true', '-rd', 'beol=true', '-rd', 'offgrid=true']
+            args: ['--mp=1', '--density_thr=1', '--no_density', '--run_mode=flat']

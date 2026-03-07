@@ -1,0 +1,81 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/edge_detector/runs/run_2026-02-26_17-35-19/parameters/mc_variations/run_0/run_19/cace_edge_detector_tb.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net3                                         0
+net1                                       1.2
+net2                                         0
+in                                 7.72104e-09
+vss                                1.95617e-07
+vdd                                        1.2
+xedge.xand.outn                            1.2
+xedge.xand.nx                      2.56609e-07
+xedge.i4                                   1.2
+out                                 2.5265e-07
+xedge.i0                               1.19999
+xedge.i1                           9.00321e-07
+xedge.i2                               1.19999
+xedge.i3                           9.00321e-07
+vsn#branch                         3.91234e-09
+vsp#branch                        -4.06676e-09
+vin#branch                         1.54421e-10
+
+ Reference value :  0.00000e+00
+ Reference value :  5.28560e-10
+ Reference value :  9.16560e-10
+ Reference value :  1.36856e-09
+ Reference value :  1.94856e-09
+ Reference value :  2.12856e-09
+ Reference value :  2.49856e-09
+ Reference value :  3.01056e-09
+ Reference value :  3.43056e-09
+ Reference value :  3.78456e-09
+ Reference value :  4.36256e-09
+ Reference value :  4.92656e-09
+ Reference value :  5.24856e-09
+ Reference value :  5.78456e-09
+ Reference value :  6.36456e-09
+ Reference value :  6.74256e-09
+ Reference value :  7.16656e-09
+ Reference value :  7.76056e-09
+ Reference value :  8.32056e-09
+ Reference value :  8.70856e-09
+ Reference value :  9.35456e-09
+ Reference value :  9.90656e-09
+ Reference value :  1.01850e-08
+ Reference value :  1.05630e-08
+ Reference value :  1.10150e-08
+ Reference value :  1.13330e-08
+ Reference value :  1.19070e-08
+ Reference value :  1.24710e-08
+ Reference value :  1.29030e-08
+ Reference value :  1.33210e-08
+ Reference value :  1.39230e-08
+ Reference value :  1.44190e-08
+ Reference value :  1.47810e-08
+ Reference value :  1.54030e-08
+ Reference value :  1.58790e-08
+ Reference value :  1.61990e-08
+ Reference value :  1.67370e-08
+ Reference value :  1.71110e-08
+ Reference value :  1.74850e-08
+ Reference value :  1.79670e-08
+ Reference value :  1.84730e-08
+ Reference value :  1.88430e-08
+ Reference value :  1.93130e-08
+ Reference value :  1.98330e-08
+No. of Data Rows : 10014
+t_rise              =  1.012371e-08
+t_fall              =  1.114246e-08
+Note: Simulation executed from .control section 

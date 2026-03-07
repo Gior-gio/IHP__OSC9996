@@ -1,0 +1,62 @@
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+Flattening unmatched subcell pmos$1$10 in circuit edge_detector (0)(3 instances)
+Flattening unmatched subcell pmos$1$9 in circuit edge_detector (0)(1 instance)
+Flattening unmatched subcell nmos$5 in circuit edge_detector (0)(1 instance)
+Flattening unmatched subcell pmos$1$8 in circuit edge_detector (0)(4 instances)
+Flattening unmatched subcell nmos$4 in circuit edge_detector (0)(4 instances)
+Flattening unmatched subcell nmos$1$5 in circuit edge_detector (0)(3 instances)
+Flattening unmatched subcell gate_and in circuit edge_detector (1)(1 instance)
+Flattening unmatched subcell gate_inv_L0d65 in circuit edge_detector (1)(5 instances)
+
+Subcircuit summary:
+Circuit 1: edge_detector                   |Circuit 2: edge_detector                   
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (8)                           |sg13_lv_pmos (8)                           
+sg13_lv_nmos (8)                           |sg13_lv_nmos (8)                           
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: edge_detector                   |Circuit 2: edge_detector                   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+IN                                         |IN                                         
+VDD                                        |VDD                                        
+OUT                                        |OUT                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes edge_detector and edge_detector are equivalent.
+
+Final result: Circuits match uniquely.
+.

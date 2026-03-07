@@ -1,0 +1,12 @@
+DUT_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/edge_detector/netlist/schematic/edge_detector.spice
+N: 0
+PDK: ihp-sg13g2
+PDK_ROOT: /foss/pdks
+VDD: '1.2'
+corner_mos: mos_tt_stat
+filename: CACE_edge_detector_TB
+iterations: 72.0
+seed: '12345'
+simpath: /foss/designs/chipathon_2025/designs/ihp-sg13g2/edge_detector/runs/RUN_2026-02-26_17-35-19/parameters/MC_Variations/run_0/run_71
+stat_sw: '1'
+temperature: '27'

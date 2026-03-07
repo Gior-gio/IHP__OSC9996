@@ -7,7 +7,7 @@
 set PDK_ROOT $::env(PDK_ROOT)
 set PDK $::env(PDK)
 set CACE_ROOT $::env(CACE_ROOT)
-set TOP LIF_Neuron_RAMP
+set TOP edge_detector
 
 set circuit1 [readnet spice $CACE_ROOT/netlist/layout/$TOP.spice]
 set circuit2 [readnet spice $CACE_ROOT/netlist/schematic/$TOP.spice]

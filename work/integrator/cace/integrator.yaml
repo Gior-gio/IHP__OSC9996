@@ -1,0 +1,234 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           integrator
+description:    Digital edge detector for a spiking analog neuron
+PDK:            ihp-sg13g2
+
+cace_format:    5.2
+
+authorship:
+  designer:         Jorge Angarita .. juan pablo luengas
+  company:          OnChip UIS
+  creation_date:    Dic 15, 2025
+  license:          Apache 2.0
+
+paths:
+  root:             ..
+  schematic:        xschem
+  layout:           gds
+  netlist:          netlist
+  documentation:    docs
+
+pins:
+  VDD:
+    description: Analog power supply
+    type: power
+    direction: inout
+    Vmin: 1.08
+    Vmax: 1.32
+  VSS:
+    description: Analog ground
+    type: ground
+    direction: inout
+  VCTR:
+    description: Digital Input
+    type: signal
+    direction: inout
+  RST:
+    description:  Reset input pulse signal
+    type: signal
+    direction: inout
+  VREF:
+    description:  Analog reference voltage output
+    type: signal
+    direction: inout
+  OUT:
+    description: Output 
+    type: signal
+    direction: out
+    
+default_conditions:
+  VDD:
+    description: Analog power supply voltage
+    display: VDD
+    unit: V
+    typical: 1.2
+  corner_mos:
+    description: Process corner (MOSFET)
+    display: Corner-MOS
+    typical: mos_tt
+  corner_res:
+    description: Process corner (Resistance)
+    display: Corner-RES
+    typical: res_typ_stat
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    typical: 27
+
+parameters:
+  PVT_Corners:
+    display: PVT_Corners
+    spec:
+      i_INT_AVG:
+        display: i_INT_AVG(PVT)
+        description: Average current consumption of the integrator block
+        unit: mA
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      F_comp:
+        display: F_comp(PVT)
+        description: Frequency of the comparator's output
+        unit: MHz
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+ 
+    tool:
+      ngspice:
+        template: CACE_integrator.sch
+        format: ascii
+        suffix: .data
+        variables: [i_INT_AVG,F_comp]
+    conditions:
+      corner_mos:
+        enumerate: [mos_ss, mos_fs, mos_ff, mos_sf]
+        #enumerate: [mos_tt, mos_ss, mos_fs, mos_ff, mos_sf]
+      corner_res:
+        enumerate: [res_wcs, res_bcs]
+        #enumerate: [res_typ, res_wcs, res_bcs]
+      stat_sw:  #Statistical switch
+        typical: 0
+      VDD:
+        minimum: 1.08
+        #typical: 1.2
+        maximum: 1.32
+      temperature:
+        minimum: -40
+        #typical: 27
+        maximum: 125
+
+  MC_Variations:
+    description: Monte-Carlo variations
+    display: MC_Variations
+    spec:
+      i_INT_AVG:
+        display: i_INT_AVG(MC)
+        description: Average current consumption of the integrator block
+        unit: mA
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      F_comp:
+        display: F_comp(MC)
+        description: Frequency of the comparator's output
+        unit: MHz
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+     
+      
+    tool:
+      ngspice:
+        template: CACE_integrator.sch
+        # Merge runs with the same conditions
+        # but different iterations
+        # This is used for plotting
+        collate: iterations
+        format: ascii
+        suffix: .data
+        variables: [i_INT_AVG,F_comp]
+        script: mc_mean_std.py
+        script_variables: [
+         i_INT_AVG_mean, i_INT_AVG_std, i_INT_AVG_estmin, i_INT_AVG_estmax,
+          F_comp_mean, F_comp_std, F_comp_estmin, F_comp_estmax
+          
+        ]
+    conditions:
+      iterations:
+        description: Iterations to run
+        display: Iterations
+        minimum: 1
+        maximum: 100
+        step: linear
+        stepsize: 1
+      corner_mos:
+        typical: mos_tt_stat
+      stat_sw: #Statistical switch
+        typical: 1
+      VDD:
+        typical: 1.2
+      temperature:
+        typical: 27
+
+  magic_area: 
+    spec:
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: µm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
+    tool:
+      magic_area
+
+  magic_drc:
+    description: Magic DRC
+    display: Magic DRC
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+      magic_drc:
+        gds_flatten: true
+
+#  netgen_lvs:
+#    description: Netgen LVS
+#    display: Netgen LVS
+#    spec:
+#      lvs_errors:
+#        maximum:
+#          value: 0
+#    tool:
+#      netgen_lvs:
+#        script: run_project_lvs.tcl
+
+  klayout_drc_full:
+    description: KLayout DRC full
+    display: KLayout DRC full
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+        klayout_drc:
+            args: ['--mp=1', '--density_thr=1', '--no_density', '--run_mode=flat']

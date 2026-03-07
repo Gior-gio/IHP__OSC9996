@@ -25,7 +25,7 @@ C {sg13g2_pr/rppd.sym} 960 -410 3 0 {name=RXOR
 w=0.5e-6
 l=0.5e-6
 model=rppd
-body=SUB
+body=sub!
 spiceprefix=X
 b=0
 m=2
@@ -37,14 +37,14 @@ C {ipin.sym} 410 -540 1 0 {name=p4 lab=VDD}
 C {opin.sym} 1040 -410 0 0 {name=p5 lab=VOUT}
 C {lab_wire.sym} 700 -540 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 700 -290 2 1 {name=p7 sig_type=std_logic lab=VSS}
-C {sg13g2_pr/rppd.sym} 980 -250 3 0 {name=RXOR1
+C {sg13g2_pr/rppd.sym} 980 -250 3 0 {name=RDMY[9:0]
 w=0.5e-6
 l=0.5e-6
 model=rppd
-body=SUB
+body=sub!
 spiceprefix=X
 b=0
-m=10
+m=1
 }
 C {lab_wire.sym} 920 -220 2 1 {name=p8 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1030 -230 2 1 {name=p9 sig_type=std_logic lab=VSS}

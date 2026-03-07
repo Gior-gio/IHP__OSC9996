@@ -1,0 +1,8 @@
+Using run time directory XSCHEM_SHAREDIR = /foss/tools/xschem/share/xschem
+Sourcing /foss/tools/xschem/share/xschem/xschemrc init file
+Sourcing /foss/pdks/ihp-sg13g2/libs.tech/xschem/xschemrc init file
+SG13G2_MODELS: /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models
+SG13G2_MODELS_XYCE: /foss/pdks/ihp-sg13g2/libs.tech/xyce/models
+l_s_d(): Symbol not found: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d5/xschem/gate_inv_L0d5.sym
+l_s_d(): Symbol not found: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d5/xschem/gate_inv_L0d5.sym
+l_s_d(): Symbol not found: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d5/xschem/gate_inv_L0d5.sym
