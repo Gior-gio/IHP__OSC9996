@@ -106,7 +106,7 @@ C {lab_wire.sym} 1050 -320 0 0 {name=p33 sig_type=std_logic lab=Vref}
 C {lab_wire.sym} 930 -480 0 0 {name=p34 sig_type=std_logic lab=Vx}
 C {lab_wire.sym} 610 -480 0 1 {name=p2 sig_type=std_logic lab=Vctr}
 C {lab_wire.sym} 1310 -480 0 1 {name=p7 sig_type=std_logic lab=MEM}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 810 -210 0 0 {name=xLIF}
+C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/LIF_neuron/xschem/LIF_neuron.sym} 810 -210 0 0 {name=xLIF}
 C {res.sym} 690 -480 3 0 {name=RIN
 value=100k
 footprint=1206

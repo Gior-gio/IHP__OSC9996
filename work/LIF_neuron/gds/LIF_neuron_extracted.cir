@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 05/03/2026 22:00
+* Extracted by KLayout with SG13G2 LVS runset on : 08/03/2026 02:10
 
 .SUBCKT LIF_neuron VDD SPIKE RST MEM VSS Vx Vref
 M$1 \$6 \$7 VSS VSS sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.19p PS=2.68u
