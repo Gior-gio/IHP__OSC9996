@@ -9,19 +9,18 @@ L 4 580 -540 800 -540 {}
 L 4 580 -440 800 -440 {}
 L 4 580 -540 580 -440 {}
 L 4 800 -540 800 -440 {}
-P 4 5 540 -640 1420 -640 1420 -260 540 -260 540 -640 {}
+P 4 5 540 -640 1360 -640 1360 -260 540 -260 540 -640 {}
 T {EXTERNAL RESISTOR} 580 -580 0 0 0.4 0.4 {}
-T {LIF NEURON} 1070 -570 0 0 0.4 0.4 {}
+T {LIF NEURON} 1010 -570 0 0 0.4 0.4 {}
 N 480 -640 480 -560 {lab=SPIKE}
 N 480 -500 480 -450 {lab=VSS}
 N 600 -480 660 -480 {lab=Vctr}
-N 1220 -580 1220 -540 {lab=VDD}
-N 1220 -340 1220 -300 {lab=VSS}
-N 1050 -340 1050 -300 {lab=Vref}
-N 900 -400 940 -400 {lab=RST}
-N 1300 -480 1360 -480 {lab=MEM}
-N 1300 -400 1360 -400 {lab=SPIKE}
-N 720 -480 940 -480 {lab=Vx}
+N 1160 -580 1160 -540 {lab=VDD}
+N 1160 -340 1160 -300 {lab=VSS}
+N 990 -340 990 -300 {lab=Vref}
+N 840 -400 880 -400 {lab=RST}
+N 1240 -480 1300 -480 {lab=MEM}
+N 1240 -400 1300 -400 {lab=SPIKE}
 N 100 -120 100 -100 {lab=GND}
 N 200 -120 200 -100 {lab=GND}
 N 300 -120 300 -100 {lab=GND}
@@ -38,6 +37,7 @@ N 100 -640 100 -590 {lab=Vref}
 N 200 -640 200 -590 {lab=Vctr}
 N 200 -530 200 -470 {lab=#net5}
 N 300 -640 300 -620 {lab=VSS}
+N 720 -480 880 -480 {lab=Vx}
 C {code.sym} 392.5 -317.5 0 0 {name=CODE only_toplevel=false 
 value="
 
@@ -60,7 +60,7 @@ let tstop = 0.1u
 let tstep = tstop/2.5k
 
 * Run transient analysis
-tran $&tstep $&tstop
+tran $&tstep $&tstop uic
 
 let IDD = -1*i(VSP)
 meas tran I_avg AVG IDD from=tstep to=tstop
@@ -98,21 +98,21 @@ value="
 * Flag unsafe operating conditions (exceeds models' specified limits)
 .option warn=1
 "}
-C {lab_wire.sym} 1220 -580 0 1 {name=p5 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 930 -400 0 0 {name=p37 sig_type=std_logic lab=RST}
-C {lab_wire.sym} 1310 -400 0 1 {name=p47 sig_type=std_logic lab=SPIKE}
-C {lab_wire.sym} 1220 -300 2 0 {name=p21 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1050 -320 0 0 {name=p33 sig_type=std_logic lab=Vref}
-C {lab_wire.sym} 930 -480 0 0 {name=p34 sig_type=std_logic lab=Vx}
+C {lab_wire.sym} 1160 -580 0 1 {name=p5 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 870 -400 0 0 {name=p37 sig_type=std_logic lab=RST}
+C {lab_wire.sym} 1250 -400 0 1 {name=p47 sig_type=std_logic lab=SPIKE}
+C {lab_wire.sym} 1160 -300 2 0 {name=p21 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 990 -320 0 0 {name=p33 sig_type=std_logic lab=Vref}
+C {lab_wire.sym} 870 -480 0 0 {name=p34 sig_type=std_logic lab=Vx}
 C {lab_wire.sym} 610 -480 0 1 {name=p2 sig_type=std_logic lab=Vctr}
-C {lab_wire.sym} 1310 -480 0 1 {name=p7 sig_type=std_logic lab=MEM}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/LIF_neuron/xschem/LIF_neuron.sym} 810 -210 0 0 {name=xLIF}
+C {lab_wire.sym} 1250 -480 0 1 {name=p7 sig_type=std_logic lab=MEM}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 750 -210 0 0 {name=xLIF}
 C {res.sym} 690 -480 3 0 {name=RIN
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {noconn.sym} 1360 -480 2 0 {name=l3}
+C {noconn.sym} 1300 -480 2 0 {name=l3}
 C {devices/vsource.sym} 300 -150 0 0 {name=VRESET value="pwl 0 \{VDD\} 10n \{VDD\} 11n 0"}
 C {lab_wire.sym} 300 -320 0 1 {name=p12 sig_type=std_logic lab=RST}
 C {gnd.sym} 300 -100 0 0 {name=l7 lab=GND}

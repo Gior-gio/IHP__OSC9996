@@ -41,10 +41,10 @@ N 720 -620 940 -620 {lab=Vx}
 C {code.sym} 532.5 -317.5 0 0 {name=CODE only_toplevel=false 
 value="
 
-.param VDD = 0.5
+.param VDD = 1.2
 .param VSS = 0
-.param vctr = 0.5
-.param vref = 0
+.param vctr = 0.6
+.param vref = 1.2
 .param Cload = 0.1p
 .param Rsource = 1m
 
@@ -60,10 +60,10 @@ value="
 .control
 
 * >> Variables <<
-let Vhigh = 0.5
+let Vhigh = 1.2
 let Vmid = Vhigh * 0.5
-let tstop = 10u
-let tstep = tstop/100k
+let tstop = 0.1u
+let tstep = tstop/2.5k
 
 * Run transient analysis
 tran $&tstep $&tstop
@@ -122,7 +122,7 @@ C {lab_wire.sym} 610 -620 0 1 {name=p2 sig_type=std_logic lab=Vctr}
 C {lab_wire.sym} 1310 -620 0 1 {name=p7 sig_type=std_logic lab=MEM}
 C {lab_wire.sym} 440 -590 3 0 {name=p49 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 440 -720 3 1 {name=p50 sig_type=std_logic lab=SPIKE}
-C {LIF_neuron/xschem/LIF_neuron.sym} 810 -350 0 0 {name=xLIF}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 810 -350 0 0 {name=xLIF}
 C {devices/code_shown.sym} 685 -302.5 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
 value="

@@ -1,5 +1,0 @@
-Warning: redefinition of .subckt edge_detector, ignored
-Warning: redefinition of .subckt gate_and, ignored
-Warning: redefinition of .subckt gate_inv_l0d65, ignored
-Note: Starting dynamic gmin stepping
-Note: Dynamic gmin stepping completed

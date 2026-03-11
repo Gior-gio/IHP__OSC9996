@@ -38,7 +38,7 @@ N 440 -580 440 -500 {lab=SPIKE}
 N 440 -440 440 -390 {lab=VSS}
 N 300 -580 300 -560 {lab=VSS}
 N 720 -420 940 -420 {lab=Vx}
-C {code.sym} 512.5 -137.5 0 0 {name=CODE only_toplevel=false 
+C {code.sym} 512.5 -147.5 0 0 {name=CODE only_toplevel=false 
 value="
 
 .param VDD = 1.2
@@ -47,7 +47,6 @@ value="
 .param vref = 1.2
 .param Cload = 0.1p
 .param Rsource = 1m
-
 
 .param sw_stat_global = 0
 .param sw_stat_mismatch = 0
@@ -58,31 +57,40 @@ value="
 
 * >> Variables <<
 
-let Vhigh = 1.2
-let Vmid = Vhigh * 0.5
-
 let tstop = 0.1u
 let tstep = tstop/2.5k
-
-* Run transient analysis
-
 
 =====================barrido===================
 
 let VDD_start = 0
 let VDD_end   = 1.2
-let VDD_step  = 0.08
+let VDD_step  = 0.03
 
 let idx = 0
 
 let npoints = (VDD_end - VDD_start)/VDD_step
+
 ====================vectores===================
 
 let VDD_vec = vector(npoints)
+let Vhigh_vec = vector(npoints)
+let Vmid_vec = vector(npoints)
 let spike_vec = vector(npoints)
+let IDD_vec = vector(npoints)
+let idd_avg_vec = vector(npoints)
+let P_avg_vec = vector(npoints)
+let F_spk_vec = vector(npoints)
+let E_spk_vec = vector(npoints)
 
 settype voltage VDD_vec
+settype voltage Vhigh_vec
+settype voltage Vmid_vec
 settype voltage spike_vec
+settype current IDD_vec
+settype current idd_avg_vec
+settype power P_avg_vec
+settype frequency F_spk_vec
+settype energy E_spk_vec
 
 ===============================================
 
@@ -93,21 +101,47 @@ while v le VDD_end
   alterparam VDD = $&v
 
   reset
-  tran 0.05n 50n
+
+  tran $&tstep $&tstop
 
   meas tran SPIKE_max max v(SPIKE)
 
   let spike_vec[idx] = SPIKE_max
+
+  let Vmid_vec[idx] = v * 0.5
+
+  meas tran idd_avg AVG i(VSP) from=tstep to=tstop
+
+  let IDD_vec[idx] = abs(idd_avg)
+
+  let P_avg_vec[idx] = abs(v*IDD_vec[idx])
+
+  meas TRAN T_spk TRIG v(SPIKE) VAL=(v*0.5) rise=2 TARG v(SPIKE) VAL=(v*0.5) rise=3
+ 
+  let F_spk_vec[idx] = 1 / T_spk
+
+  if (F_spk_vec[idx] < 1k)
+
+      let E_spk_vec[idx] = 0
+
+  else
+
+      let E_spk_vec[idx] = P_avg_vec[idx]/F_spk_vec[idx]
+
+  end
+
   let VDD_vec[idx] = v
 
   let v = v + VDD_step
+
   let idx = idx + 1
 
 end
 
-print v(spike_vec) v(VDD_vec)
-plot spike_vec vs VDD_vec
+print v(VDD_vec) IDD_vec P_avg_vec v(spike_vec) E_spk_vec F_spk_vec
 
+plot spike_vec vs VDD_vec
+plot E_spk_vec vs VDD_vec
 
 .endc
 "}
