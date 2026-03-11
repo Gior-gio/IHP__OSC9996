@@ -1,10 +1,18 @@
-drc_run*
-work/*/gds/drc_run*
+# CACE:
+work/*/netlist/
+work/*/runs/
+work/*/docs/
 
-backups
-work/*/gds/backups
+# Simulations folder for IHP PDK
+**/simulations/
 
-simulations
-work/simulations
-work/*/simulations
-work/*/*/simulations
+# Layout Files for IHP
+**/drc_run_*/
+**/sg13g2_drc_main.lyrdb
+
+# Klayout files
+**/backups/
+*_extracted.cir
+**/main.lyrdb
+**/density.lyrdb
+**/antenna.lyrdb
