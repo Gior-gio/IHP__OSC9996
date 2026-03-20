@@ -4,6 +4,18 @@
 
 Recently, the leaky integrate and fire (LIF) neuron model has become one of the most common models for implementing spiking neural networks (SNNs) in silicon. However, one of the main difficulties is finding a topology that is easily scalable on a large scale [1]. Many of them end up requiring opamps, and therefore high supply voltages and good gain, which also makes their design difficult for advanced CMOS nodes [2]. To this end, this project will implement a ring oscillator-based integrator, a mostly digital implementation that achieves this by converting phase to voltage at the output of a pair of voltage-controlled oscillators (VCOs). This will be demonstrated by designing a basic neuron block taken from [1], which, to the project authors' knowledge, has not yet been reported in the literature as having been manufactured in silicon [2].
 
+### Pin list
+
+| Pin Name | Type    | Direction     |
+|----------|--------|--------------|
+| VDD      | Power  | Bidirectional |
+| VSS      | Power  | Bidirectional |
+| Vx       | Analog | Input         |
+| Vref     | Analog | Input         |
+| RST      | Digital| Input         |
+| COMP     | Digital| Output        |
+| SPIKE    | Digital| Output        |
+
 ## Team Members:
 
 - Jorge Angarita (M)
