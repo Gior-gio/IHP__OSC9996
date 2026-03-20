@@ -60,8 +60,8 @@ N 720 -300 720 -240 {lab=COMP}
 N 680 -240 720 -240 {lab=COMP}
 N 720 -240 830 -240 {lab=COMP}
 N 720 -300 780 -300 {lab=COMP}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator/xschem/integrator.sym} 120 -80 0 0 {name=xINT}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/spike_generator/xschem/spike_generator.sym} 940 -210 0 0 {name=xSPK}
+C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator/xschem/integrator.sym} 120 -80 0 0 {name=xINT}
+C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/spike_generator/xschem/spike_generator.sym} 940 -210 0 0 {name=xSPK}
 C {iopin.sym} 80 -440 0 1 {name=p2 lab=VDD}
 C {iopin.sym} 80 -20 0 1 {name=p1 lab=VSS}
 C {opin.sym} 450 -350 0 0 {name=p7 lab=MEM
@@ -72,9 +72,9 @@ C {opin.sym} 1140 -240 0 0 {name=p3 lab=SPIKE
 }
 C {ipin.sym} 770 -180 0 0 {name=p4 lab=RST}
 C {lab_wire.sym} 790 -60 0 1 {name=p5 sig_type=std_logic lab=INT_RST}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bank/resistence_bank.sym} 280 -500 0 0 {name=xRES}
+C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/resistance_bank/resistence_bank.sym} 280 -500 0 0 {name=xRES}
 C {lab_wire.sym} 280 -590 0 1 {name=p9 sig_type=std_logic lab=VDD}
-C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/threshold_circuit/xschem/threshold_comparator.sym} 600 -240 0 0 {name=x1}
+C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/threshold_circuit/xschem/threshold_comparator.sym} 600 -240 0 0 {name=x1}
 C {opin.sym} 780 -300 0 0 {name=p10 lab=COMP
 =======
 C \{opin.sym}
