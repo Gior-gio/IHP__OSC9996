@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 L 4 1160 -110 1160 -30 {}
 P 4 5 1060 -150 1060 -110 1360 -110 1360 -150 1060 -150 {}
@@ -59,7 +58,7 @@ C {lab_wire.sym} 800 -260 2 0 {name=p23 sig_type=std_logic lab=VDD
 C {lab_wire.sym} 800 -90 2 0 {name=p24 sig_type=std_logic lab=VSS
 
 }
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/edge_detector/xschem/edge_detector.sym} 540 -440 0 0 {name=xEDGE}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 -260 0 0 {name=xBSPK}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 10 0 0 {name=xBRST}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_or/xschem/gate_or.sym} 580 -170 0 0 {name=xOR}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/edge_detector/xschem/edge_detector.sym} 540 -440 0 0 {name=xEDGE}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 -260 0 0 {name=xBSPK}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 10 0 0 {name=xBRST}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_or/xschem/gate_or.sym} 580 -170 0 0 {name=xOR}

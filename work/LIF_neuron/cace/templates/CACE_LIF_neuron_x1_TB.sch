@@ -10,10 +10,10 @@ L 4 580 -440 800 -440 {}
 L 4 580 -540 580 -440 {}
 L 4 800 -540 800 -440 {}
 P 4 5 540 -640 1360 -640 1360 -260 540 -260 540 -640 {}
+P 4 5 1420 -640 2380 -640 2380 -220 1420 -220 1420 -640 {}
 T {EXTERNAL RESISTOR} 580 -580 0 0 0.4 0.4 {}
 T {LIF NEURON} 1010 -570 0 0 0.4 0.4 {}
-N 480 -640 480 -560 {lab=SPIKE}
-N 480 -500 480 -450 {lab=VSS}
+T {OUTPUT BUFFERS} 1840 -620 0 0 0.4 0.4 {}
 N 600 -480 660 -480 {lab=Vctr}
 N 1160 -580 1160 -540 {lab=VDD}
 N 1160 -340 1160 -300 {lab=VSS}
@@ -38,6 +38,18 @@ N 200 -640 200 -590 {lab=Vctr}
 N 200 -530 200 -470 {lab=#net5}
 N 300 -640 300 -620 {lab=VSS}
 N 720 -480 880 -480 {lab=Vx}
+N 2300 -440 2300 -360 {lab=SPIKEB}
+N 2300 -300 2300 -250 {lab=VSS}
+N 1840 -440 1840 -360 {lab=COMPB}
+N 1840 -300 1840 -250 {lab=VSS}
+N 2200 -440 2300 -440 {lab=SPIKEB}
+N 1920 -440 2000 -440 {lab=SPIKE}
+N 2080 -580 2080 -510 {lab=VDDB}
+N 2080 -370 2080 -300 {lab=VSS}
+N 1460 -440 1540 -440 {lab=COMP}
+N 1620 -580 1620 -510 {lab=VDDB}
+N 1620 -370 1620 -300 {lab=VSS}
+N 1740 -440 1840 -440 {lab=COMPB}
 C {code.sym} 392.5 -317.5 0 0 {name=CODE only_toplevel=false 
 value="
 
@@ -74,13 +86,6 @@ echo $&F_spk $&I_avg $&P_avg $&E_spk> CACE\{simpath\}/CACE\{filename\}_CACE\{N\}
 
 .endc
 "}
-C {capa.sym} 480 -530 0 0 {name=C1
-m=1
-value=\{cap\}
-footprint=1206
-device="ceramic capacitor"}
-C {lab_wire.sym} 480 -450 3 0 {name=p49 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 480 -580 3 1 {name=p50 sig_type=std_logic lab=SPIKE}
 C {devices/code_shown.sym} 50 -960 0 0 {name=SETUP only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -161,3 +166,25 @@ l=0.78e-6
 }
 C {lab_wire.sym} 300 -640 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {sg13g2_pr/sub.sym} 300 -560 0 0 {name=l4 lab=sub!}
+C {lab_wire.sym} 2300 -290 3 0 {name=p1 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 2220 -440 0 1 {name=p3 sig_type=std_logic lab=SPIKEB}
+C {devices/capa.sym} 2300 -330 0 0 {name=Cload
+m=1
+value=\{Cload\}
+footprint=1206
+device="ceramic capacitor"}
+C {lab_wire.sym} 1840 -290 3 0 {name=p4 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1760 -440 0 1 {name=p6 sig_type=std_logic lab=COMPB}
+C {devices/capa.sym} 1840 -330 0 0 {name=Cload1
+m=1
+value=\{Cload\}
+footprint=1206
+device="ceramic capacitor"}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 2080 -440 0 0 {name=xSPKB}
+C {lab_wire.sym} 2080 -530 3 1 {name=p9 sig_type=std_logic lab=VDDB}
+C {lab_wire.sym} 2080 -350 3 0 {name=p13 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1930 -440 0 1 {name=p15 sig_type=std_logic lab=SPIKE}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 1620 -440 0 0 {name=xCOMPB}
+C {lab_wire.sym} 1620 -530 3 1 {name=p16 sig_type=std_logic lab=VDDB}
+C {lab_wire.sym} 1620 -350 3 0 {name=p17 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1470 -440 0 1 {name=p18 sig_type=std_logic lab=COMP}

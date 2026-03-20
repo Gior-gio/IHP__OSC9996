@@ -1,10 +1,10 @@
-** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_Neuron/xschem/LIF_neuron.sch
-.subckt LIF_neuron VDD Vx MEM RST SPIKE VSS Vref
-*.PININFO VDD:B VSS:B MEM:O Vx:I Vref:I SPIKE:O RST:I
+** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sch
+.subckt LIF_neuron VDD Vx MEM RST SPIKE VSS Vref COMP
+*.PININFO VDD:B VSS:B MEM:O Vx:I Vref:I SPIKE:O RST:I COMP:O
 xINT Vref VSS VDD INT_RST Vx MEM integrator
 xSPK VDD COMP SPIKE INT_RST RST VSS spike_generator
+xRES VDD MEM Vx resistence_bench
 x1 VDD MEM COMP VSS threshold_comparator
-x2 VDD MEM Vx resistence_bench
 .ends
 
 * expanding   symbol:  /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator/xschem/integrator.sym # of pins=6
@@ -12,25 +12,25 @@ x2 VDD MEM Vx resistence_bench
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator/xschem/integrator.sch
 .subckt integrator Vref VSS VDD RST Vctr VOUT
 *.PININFO VSS:I Vref:I Vctr:I VDD:I RST:I VOUT:O
-x6 VDD VcrtPP P0 P1 Vctr VSS RST integrator_curstav_inv
-x7 VDD VcrtPP P1 P2 Vctr VSS VSS integrator_curstav_inv
-x8 VDD VcrtPP P2 P3 Vctr VSS RST integrator_curstav_inv
-x9 VDD VcrtPP P3 P4 Vctr VSS VSS integrator_curstav_inv
-x10 VDD VcrtPP P4 P0 Vctr VSS RST integrator_curstav_inv
-x11 VDD R1 VOUT P1 VSS integrator_phasedetector
-x12 VDD R2 VOUT P2 VSS integrator_phasedetector
-x13 VDD R3 VOUT P3 VSS integrator_phasedetector
-x14 VDD R4 VOUT P4 VSS integrator_phasedetector
-x15 VDD R0 VOUT P0 VSS integrator_phasedetector
-M1 VcrtPP Vctr VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M3 VcrtPP VcrtPP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M2 VcrtP VcrtP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M4 VcrtP Vref VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-x1 VDD VcrtP R0 R1 Vref VSS RST integrator_curstav_inv
-x2 VDD VcrtP R1 R2 Vref VSS VSS integrator_curstav_inv
-x3 VDD VcrtP R2 R3 Vref VSS RST integrator_curstav_inv
-x4 VDD VcrtP R3 R4 Vref VSS VSS integrator_curstav_inv
-x5 VDD VcrtP R4 R0 Vref VSS RST integrator_curstav_inv
+xIP0 VDD VctrPP P0 P1 Vctr VSS RST integrator_curstav_inv
+xIP1 VDD VctrPP P1 P2 Vctr VSS VSS integrator_curstav_inv
+xIP2 VDD VctrPP P2 P3 Vctr VSS RST integrator_curstav_inv
+xIP3 VDD VctrPP P3 P4 Vctr VSS VSS integrator_curstav_inv
+xIP4 VDD VctrPP P4 P0 Vctr VSS RST integrator_curstav_inv
+xPD0 VDD R1 VOUT P1 VSS integrator_phasedetector
+xPD1 VDD R2 VOUT P2 VSS integrator_phasedetector
+xPD2 VDD R3 VOUT P3 VSS integrator_phasedetector
+xPD3 VDD R4 VOUT P4 VSS integrator_phasedetector
+xPD4 VDD R0 VOUT P0 VSS integrator_phasedetector
+M1 VctrPP Vctr VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M3 VctrPP VctrPP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M2 VctrPR VctrPR VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M4 VctrPR Vref VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+xIR0 VDD VctrPR R0 R1 Vref VSS RST integrator_curstav_inv
+xIR1 VDD VctrPR R1 R2 Vref VSS VSS integrator_curstav_inv
+xIR2 VDD VctrPR R2 R3 Vref VSS RST integrator_curstav_inv
+xIR3 VDD VctrPR R3 R4 Vref VSS VSS integrator_curstav_inv
+xIR4 VDD VctrPR R4 R0 Vref VSS RST integrator_curstav_inv
 .ends
 
 
@@ -43,6 +43,24 @@ xEDGE Vcmp SPK_OUT VDD VSS edge_detector
 xBSPK VDD SPK_OUT Vspk VSS gate_buff_L0d13
 xBRST VDD net1 Vrst VSS gate_buff_L0d13
 xOR Ven VDD VSS net1 Vcmp gate_or
+.ends
+
+
+* expanding   symbol:  /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sym # of pins=3
+** sym_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sym
+** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sch
+.subckt resistence_bench VDD MEM Vx
+*.PININFO VDD:B Vx:B MEM:B
+RFB0 net4 Vx rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB1 net3 net4 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB2 net2 net3 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB3 net1 net2 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB5 VDD VDD rhigh w=0.5e-6 l=4e-6 m=8 b=0
+RFB6 net5 net1 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB7 net6 net5 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB8 net7 net6 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB9 MEM net7 rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB4 VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=8 b=0
 .ends
 
 
@@ -59,35 +77,18 @@ M4 Vout Vx VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=2
 .ends
 
 
-* expanding   symbol:  /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sym # of pins=3
-** sym_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sym
-** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sch
-.subckt resistence_bench VDD MEM Vx
-*.PININFO VDD:B Vx:B MEM:B
-RFB net7 net3 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB4 VDD VDD rhigh w=0.5e-6 l=4e-6 m=8 b=0
-RFB1 net3 net2 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB2 net2 net1 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB3 net1 MEM rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB5 Vx net6 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB6 net6 net5 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB7 net5 net4 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB8 net4 net7 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-.ends
-
-
 * expanding   symbol:  /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sym #
 *+ of pins=7
 ** sym_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sym
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_curstav_inv/xschem/integrator_curstav_inv.sch
 .subckt integrator_curstav_inv VDD VcrtP A B VcrtN VSS RST
 *.PININFO VDD:I VSS:I A:I B:O VcrtP:I VcrtN:I RST:I
-M1 B A net2 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M2 net2 VcrtN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M3 B A net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M4 net1 VcrtP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M5 B VDD VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M6 B RST VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
+M1 B A net2 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M2 net2 VcrtN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M3 B A net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M4 net1 VcrtP VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M5 B VDD VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M6 B RST VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
 .ends
 
 
@@ -97,10 +98,19 @@ M6 B RST VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/integrator_phasedetector/xschem/integrator_phasedetector.sch
 .subckt integrator_phasedetector VDD A VOUT B VSS
 *.PININFO A:I B:I VSS:I VDD:I VOUT:O
-x1 VDD net2 B A VSS gate_xor
-x2 VDD net2 net1 VSS gate_buff_L0d13
-RXOR net1 VOUT rppd w=0.5e-6 l=0.5e-6 m=2 b=0
-RXOR1 VSS VSS rppd w=0.5e-6 l=0.5e-6 m=10 b=0
+x1 VDD XOR B A VSS gate_xor
+x2 VDD XOR BUF VSS gate_buff_L0d13
+RXOR VOUT BUF rppd w=0.5e-6 l=0.5e-6 m=2 b=0
+RDMY[9] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[8] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[7] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[6] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[5] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[4] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[3] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[2] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[1] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[0] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
 .ends
 
 
@@ -123,8 +133,8 @@ xINV4 VDD I4 I3 VSS gate_inv_L0d65
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_L0d13/xschem/gate_buff_L0d13.sch
 .subckt gate_buff_L0d13 VDD VIN VOUT VSS
 *.PININFO VDD:I VIN:I VSS:I VOUT:O
-M1 net1 VIN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M2 net1 VIN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
+M1 net1 VIN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M2 net1 VIN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
 M3 VOUT net1 VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=3
 M4 VOUT net1 VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=3
 .ends
@@ -135,12 +145,12 @@ M4 VOUT net1 VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=3
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_or/xschem/gate_or.sch
 .subckt gate_or B VDD VSS OUT A
 *.PININFO OUT:O A:I VDD:B VSS:B B:I
-MNB OUTN B VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-MNA OUTN A VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-MPA X A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-MPB OUTN B X VDD sg13_lv_pmos w=2u l=0.13u ng=1
-MNI OUT OUTN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-MPI OUT OUTN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
+MNB OUTN B VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+MNA OUTN A VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+MPA X A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+MPB OUTN B X VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+MNI OUT OUTN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+MPI OUT OUTN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
 .ends
 
 
@@ -149,14 +159,14 @@ MPI OUT OUTN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_xor/xschem/gate_xor.sch
 .subckt gate_xor VDD S B A VSS
 *.PININFO VSS:I B:I A:I VDD:I S:O
-M2 net1 A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M1 S -B net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M4 net2 -A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M5 S B net2 VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M6 S B net4 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M3 net4 A VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M7 S -B net3 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
-M8 net3 -A VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
+M2 net1 A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M1 S -B net1 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M4 net2 -A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M5 S B net2 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M6 S B net4 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M3 net4 A VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M7 S -B net3 VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
+M8 net3 -A VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
 x3 VDD A -A VSS gate_inv_L0d13
 x1 VDD B -B VSS gate_inv_L0d13
 .ends
@@ -167,12 +177,12 @@ x1 VDD B -B VSS gate_inv_L0d13
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_and/xschem/gate_and.sch
 .subckt gate_and B VDD VSS OUT A
 *.PININFO OUT:O A:I VDD:B VSS:B B:I
-MNB OUTN B NX VSS sg13_lv_nmos w=1u l=0.13u ng=1
-MNA NX A VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1
-MPB OUTN B VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-MPA OUTN A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-MNI OUT OUTN VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1
-MPI OUT OUTN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
+MNB OUTN B NX VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+MNA NX A VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+MPB OUTN B VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+MPA OUTN A VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+MNI OUT OUTN VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+MPI OUT OUTN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
 .ends
 
 
@@ -181,8 +191,8 @@ MPI OUT OUTN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d65/xschem/gate_inv_L0d65.sch
 .subckt gate_inv_L0d65 VDD B A VSS
 *.PININFO B:O A:I VDD:B VSS:B
-MN B A VSS VSS sg13_lv_nmos w=1u l=0.65u ng=1
-MP B A VDD VDD sg13_lv_pmos w=2u l=0.65u ng=1
+MN B A VSS VSS sg13_lv_nmos w=1u l=0.65u ng=1 m=1
+MP B A VDD VDD sg13_lv_pmos w=2u l=0.65u ng=1 m=1
 .ends
 
 
@@ -191,7 +201,7 @@ MP B A VDD VDD sg13_lv_pmos w=2u l=0.65u ng=1
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d13/xschem/gate_inv_L0d13.sch
 .subckt gate_inv_L0d13 VDD VIN VOUT VSS
 *.PININFO VDD:I VSS:I VIN:I VOUT:O
-M2 VOUT VIN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1
-M1 VOUT VIN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
+M2 VOUT VIN VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+M1 VOUT VIN VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
 .ends
 

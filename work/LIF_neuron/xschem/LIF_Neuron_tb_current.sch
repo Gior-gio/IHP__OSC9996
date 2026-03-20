@@ -9,21 +9,23 @@ L 4 580 -680 800 -680 {}
 L 4 580 -580 800 -580 {}
 L 4 580 -680 580 -580 {}
 L 4 800 -680 800 -580 {}
-P 4 5 550 -780 1430 -780 1430 -400 550 -400 550 -780 {}
+P 4 5 520 -780 1420 -780 1420 -400 520 -400 520 -780 {}
+P 4 5 1460 -780 2420 -780 2420 -360 1460 -360 1460 -780 {}
 T {EXTERNAL RESISTOR} 580 -720 0 0 0.4 0.4 {}
-T {LIF NEURON} 1070 -710 0 0 0.4 0.4 {}
-N 100 -260 100 -240 {lab=GND}
-N 200 -260 200 -240 {lab=GND}
-N 300 -260 300 -240 {lab=GND}
+T {LIF NEURON} 1080 -710 0 0 0.4 0.4 {}
+T {OUTPUT BUFFERS} 1880 -760 0 0 0.4 0.4 {}
+N 220 -260 220 -240 {lab=GND}
+N 320 -260 320 -240 {lab=GND}
+N 420 -260 420 -240 {lab=GND}
 N 200 -550 200 -530 {lab=GND}
 N 100 -550 100 -530 {lab=GND}
-N 300 -380 300 -320 {lab=#net1}
+N 420 -380 420 -320 {lab=#net1}
 N 100 -670 100 -610 {lab=#net2}
-N 200 -380 200 -320 {lab=#net3}
-N 100 -380 100 -320 {lab=#net4}
-N 100 -460 100 -440 {lab=VDD}
-N 200 -460 200 -440 {lab=VSS}
-N 300 -460 300 -440 {lab=RST}
+N 320 -380 320 -320 {lab=#net3}
+N 220 -380 220 -320 {lab=#net4}
+N 220 -460 220 -440 {lab=VDD}
+N 320 -460 320 -440 {lab=VSS}
+N 420 -460 420 -440 {lab=RST}
 N 600 -620 660 -620 {lab=Vctr}
 N 1220 -720 1220 -680 {lab=VDD}
 N 1220 -480 1220 -440 {lab=VSS}
@@ -34,18 +36,32 @@ N 1300 -540 1360 -540 {lab=SPIKE}
 N 100 -780 100 -730 {lab=Vref}
 N 200 -780 200 -730 {lab=Vctr}
 N 200 -670 200 -610 {lab=#net5}
-N 440 -780 440 -700 {lab=SPIKE}
-N 440 -640 440 -590 {lab=VSS}
+N 2340 -580 2340 -500 {lab=SPIKEB}
+N 2340 -440 2340 -390 {lab=VSS}
 N 300 -780 300 -760 {lab=VSS}
 N 720 -620 940 -620 {lab=Vx}
-C {code.sym} 532.5 -317.5 0 0 {name=CODE only_toplevel=false 
+N 1300 -580 1360 -580 {lab=COMP}
+N 1880 -580 1880 -500 {lab=COMPB}
+N 1880 -440 1880 -390 {lab=VSS}
+N 2240 -580 2340 -580 {lab=SPIKEB}
+N 1960 -580 2040 -580 {lab=SPIKE}
+N 2120 -720 2120 -650 {lab=VDDB}
+N 2120 -510 2120 -440 {lab=VSS}
+N 1500 -580 1580 -580 {lab=COMP}
+N 1660 -720 1660 -650 {lab=VDDB}
+N 1660 -510 1660 -440 {lab=VSS}
+N 1780 -580 1880 -580 {lab=COMPB}
+N 100 -260 100 -240 {lab=GND}
+N 100 -380 100 -320 {lab=#net6}
+N 100 -460 100 -440 {lab=VDDB}
+C {code.sym} 1062.5 -347.5 0 0 {name=CODE only_toplevel=false 
 value="
 
-.param VDD = 1.2
+.param VDD = 0.5
 .param VSS = 0
-.param vctr = 0.6
-.param vref = 1.2
-.param Cload = 0.1p
+.param vctr = 0
+.param vref = 0.5
+.param Cload = 20p
 .param Rsource = 1m
 
 .param sw_stat_global = 0
@@ -60,9 +76,9 @@ value="
 .control
 
 * >> Variables <<
-let Vhigh = 1.2
+let Vhigh = 0.5
 let Vmid = Vhigh * 0.5
-let tstop = 0.1u
+let tstop = 0.5u
 let tstep = tstop/2.5k
 
 * Run transient analysis
@@ -93,20 +109,20 @@ print F_spk I_avg P_avg E_spk
 * Plots
 plot v(Vctr) v(Vref) v(RST)
 plot v(MEM) v(Vx) v(vctr)
-plot v(xLIF.COMP)
-plot v(SPIKE)
+plot v(COMP) v(SPIKE)
+plot v(COMPB) v(SPIKEB)
 
 .endc
 "}
 C {lab_wire.sym} 1220 -720 0 1 {name=p5 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 300 -290 0 0 {name=VRESET value="pwl 0 \{VDD\} 10n \{VDD\} 11n 0"}
-C {lab_wire.sym} 300 -460 0 1 {name=p12 sig_type=std_logic lab=RST}
-C {gnd.sym} 300 -240 0 0 {name=l7 lab=GND}
-C {devices/gnd.sym} 100 -240 0 0 {name=l12 lab=GND}
-C {devices/lab_wire.sym} 100 -460 0 0 {name=p19 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 200 -290 0 0 {name=VSN value=\{VSS\}}
-C {devices/gnd.sym} 200 -240 0 0 {name=l13 lab=GND}
-C {devices/lab_wire.sym} 200 -460 0 0 {name=p14 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 420 -290 0 0 {name=VRESET value="pwl 0 \{VDD\} 10n \{VDD\} 11n 0"}
+C {lab_wire.sym} 420 -460 0 1 {name=p12 sig_type=std_logic lab=RST}
+C {gnd.sym} 420 -240 0 0 {name=l7 lab=GND}
+C {devices/gnd.sym} 220 -240 0 0 {name=l12 lab=GND}
+C {devices/lab_wire.sym} 220 -460 0 0 {name=p19 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} 320 -290 0 0 {name=VSN value=\{VSS\}}
+C {devices/gnd.sym} 320 -240 0 0 {name=l13 lab=GND}
+C {devices/lab_wire.sym} 320 -460 0 0 {name=p14 sig_type=std_logic lab=VSS}
 C {devices/gnd.sym} 200 -530 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} 200 -780 0 0 {name=p8 sig_type=std_logic lab=Vctr}
 C {devices/vsource.sym} 100 -580 0 0 {name=VR value=\{vref\}}
@@ -120,27 +136,27 @@ C {lab_wire.sym} 1050 -460 0 0 {name=p33 sig_type=std_logic lab=Vref}
 C {lab_wire.sym} 930 -620 0 0 {name=p34 sig_type=std_logic lab=Vx}
 C {lab_wire.sym} 610 -620 0 1 {name=p2 sig_type=std_logic lab=Vctr}
 C {lab_wire.sym} 1310 -620 0 1 {name=p7 sig_type=std_logic lab=MEM}
-C {lab_wire.sym} 440 -590 3 0 {name=p49 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 440 -720 3 1 {name=p50 sig_type=std_logic lab=SPIKE}
+C {lab_wire.sym} 2340 -430 3 0 {name=p49 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 2260 -580 0 1 {name=p50 sig_type=std_logic lab=SPIKEB}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 810 -350 0 0 {name=xLIF}
-C {devices/code_shown.sym} 685 -302.5 0 0 {name=MODEL only_toplevel=true
+C {devices/code_shown.sym} 635 -332.5 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
 value="
 .lib cornerMOSlv.lib mos_tt
 .lib $::SG13G2_MODELS/cornerRES.lib res_typ
 .lib $::SG13G2_MODELS/cornerCAP.lib cap_typ
 "}
-C {devices/res.sym} 100 -410 2 0 {name=RDD
+C {devices/res.sym} 220 -410 2 0 {name=RDD
 value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 200 -410 2 0 {name=RSS
+C {devices/res.sym} 320 -410 2 0 {name=RSS
 value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 300 -410 2 0 {name=RRST
+C {devices/res.sym} 420 -410 2 0 {name=RRST
 value=\{Rsource\}
 footprint=1206
 device=resistor
@@ -155,7 +171,7 @@ value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/capa.sym} 440 -670 0 0 {name=Cload
+C {devices/capa.sym} 2340 -470 0 0 {name=Cload
 m=1
 value=\{Cload\}
 footprint=1206
@@ -165,7 +181,7 @@ value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/vsource.sym} 100 -290 0 0 {name=VSP value=\{VDD\}}
+C {devices/vsource.sym} 220 -290 0 0 {name=VSP value=\{VDD\}}
 C {noconn.sym} 1360 -620 2 0 {name=l3}
 C {sg13g2_pr/ptap1.sym} 300 -730 0 0 {name=RTAP
 model=ptap1
@@ -175,3 +191,27 @@ l=0.78e-6
 }
 C {lab_wire.sym} 300 -780 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {sg13g2_pr/sub.sym} 300 -700 0 0 {name=l4 lab=sub!}
+C {lab_wire.sym} 1310 -580 0 1 {name=p1 sig_type=std_logic lab=COMP}
+C {lab_wire.sym} 1880 -430 3 0 {name=p3 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1800 -580 0 1 {name=p4 sig_type=std_logic lab=COMPB}
+C {devices/capa.sym} 1880 -470 0 0 {name=Cload1
+m=1
+value=\{Cload\}
+footprint=1206
+device="ceramic capacitor"}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 2120 -580 0 0 {name=xSPKB}
+C {lab_wire.sym} 2120 -670 3 1 {name=p6 sig_type=std_logic lab=VDDB}
+C {lab_wire.sym} 2120 -490 3 0 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1970 -580 0 1 {name=p13 sig_type=std_logic lab=SPIKE}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 1660 -580 0 0 {name=xCOMPB}
+C {lab_wire.sym} 1660 -670 3 1 {name=p16 sig_type=std_logic lab=VDDB}
+C {lab_wire.sym} 1660 -490 3 0 {name=p17 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1510 -580 0 1 {name=p18 sig_type=std_logic lab=COMP}
+C {devices/gnd.sym} 100 -240 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} 100 -460 0 0 {name=p15 sig_type=std_logic lab=VDDB}
+C {devices/res.sym} 100 -410 2 0 {name=RDD1
+value=\{Rsource\}
+footprint=1206
+device=resistor
+m=1}
+C {devices/vsource.sym} 100 -290 0 0 {name=VSP1 value=\{VDD\}}

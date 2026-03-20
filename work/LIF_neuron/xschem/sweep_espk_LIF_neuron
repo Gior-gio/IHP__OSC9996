@@ -142,6 +142,8 @@ print v(VDD_vec) IDD_vec P_avg_vec v(spike_vec) E_spk_vec F_spk_vec
 
 plot spike_vec vs VDD_vec
 plot E_spk_vec vs VDD_vec
+plot F_spk_vec vs VDD_vec
+plot P_avg_vec vs VDD_vec
 
 .endc
 "}

@@ -61,7 +61,7 @@ value="
 * >> Variables <<
 let Vhigh = 1.2
 let Vmid = Vhigh * 0.5
-let tstop = 25n
+let tstop = 50n
 let tstep = tstop/10k
 
 * Run transient analysis
@@ -72,7 +72,7 @@ let F_ctr = 1 / T_ctr
 meas TRAN T_ref TRIG v(xint.r1) VAL=Vmid rise=2 TARG v(xint.r1) VAL=Vmid rise=3
 let F_ref = 1 / T_ref
 
-print F_ctr/1e+06 F_ref/1e+06
+print F_ctr F_ref
 
 meas tran i_INT AVG i(VSP) from=6n to=$&tstop
 let i_INT_AVG=-1*i_INT

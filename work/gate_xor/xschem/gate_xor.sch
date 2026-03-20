@@ -159,5 +159,5 @@ m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d13/xschem/gate_inv_L0d13.sym} -30 -450 0 0 {name=x3}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d13/xschem/gate_inv_L0d13.sym} -20 -150 0 0 {name=x1}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d13/xschem/gate_inv_L0d13.sym} -30 -450 0 0 {name=x3}
+C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_inv_L0d13/xschem/gate_inv_L0d13.sym} -20 -150 0 0 {name=x1}

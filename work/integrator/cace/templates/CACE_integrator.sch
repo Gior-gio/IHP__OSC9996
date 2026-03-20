@@ -71,10 +71,10 @@ value="
 let Vhigh = CACE\{VDD\}
 let Vmid = Vhigh * 0.5
 let tstop = 50n
-let tstep = tstop/1k
+let tstep = tstop/2k
 
 * Run transient analysis
-tran $&tstep $&tstop
+tran $&tstep $&tstop uic
 
 *meas TRAN T_ctr TRIG v(xint.p1) VAL=Vmid rise=2 TARG v(xint.p1) VAL=Vmid rise=3
 *let F_ctr = 1 / T_ctr
