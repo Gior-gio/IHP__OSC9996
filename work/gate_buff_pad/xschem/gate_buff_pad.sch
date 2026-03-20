@@ -72,7 +72,8 @@ C {ipin.sym} 470 -350 0 0 {name=p3 lab=VIN
 }
 C {ipin.sym} 590 -200 3 0 {name=p2 lab=VSS}
 C {opin.sym} 1180 -350 0 0 {name=p6 lab=VOUT}
-C {lab_wire.sym} 640 -270 2 0 {name=p4 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 640 -270 2 0 {name=p4 sig_type=std_logic lab=VSS
+w=2u}
 C {title.sym} 160 -40 0 0 {name=l1 author="Jorge Angarita Perez"}
 C {lab_wire.sym} 810 -440 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {sg13g2_pr/sg13_lv_nmos.sym} 750 -270 0 0 {name=MN2
@@ -91,7 +92,8 @@ m=16
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {lab_wire.sym} 820 -270 2 0 {name=p7 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 820 -270 2 0 {name=p7 sig_type=std_logic lab=VSS
+w=2u}
 C {lab_wire.sym} 770 -200 2 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 770 -520 0 1 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 990 -440 2 0 {name=p11 sig_type=std_logic lab=VDD}
@@ -111,7 +113,8 @@ m=64
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {lab_wire.sym} 1000 -270 2 0 {name=p12 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1000 -270 2 0 {name=p12 sig_type=std_logic lab=VSS
+w=2u}
 C {lab_wire.sym} 1170 -440 0 1 {name=p13 sig_type=std_logic lab=VDD}
 C {sg13g2_pr/sg13_lv_nmos.sym} 1110 -270 0 0 {name=MN4
 l=0.13u
@@ -129,7 +132,8 @@ m=256
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {lab_wire.sym} 1180 -270 2 0 {name=p14 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1180 -270 2 0 {name=p14 sig_type=std_logic lab=VSS
+w=1u}
 C {lab_wire.sym} 950 -200 2 0 {name=p16 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 950 -520 0 1 {name=p17 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1130 -200 2 0 {name=p15 sig_type=std_logic lab=VSS}

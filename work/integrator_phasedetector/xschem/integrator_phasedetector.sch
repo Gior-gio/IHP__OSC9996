@@ -5,8 +5,8 @@ V {}
 S {}
 F {}
 E {}
-N 820 -410 930 -410 {lab=#net1}
-N 540 -410 620 -410 {lab=#net2}
+N 820 -410 930 -410 {lab=BUF}
+N 540 -410 620 -410 {lab=XOR}
 N 700 -340 700 -290 {lab=VSS}
 N 410 -330 410 -280 {lab=VSS}
 N 410 -540 410 -490 {lab=VDD}
@@ -21,14 +21,14 @@ N 1030 -250 1030 -230 {lab=VSS}
 C {title.sym} 160 -40 0 0 {name=l1 author="Juan pablo luengas -- Nicolas Velasco"}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_xor/xschem/gate_xor.sym} 250 -220 0 0 {name=x1}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 440 -230 0 0 {name=x2}
-C {sg13g2_pr/rppd.sym} 960 -410 3 0 {name=RXOR
+C {sg13g2_pr/rppd.sym} 960 -410 3 0 {name=RXOR[1:0]
 w=0.5e-6
 l=0.5e-6
 model=rppd
 body=sub!
 spiceprefix=X
 b=0
-m=2
+m=1
 }
 C {ipin.sym} 240 -440 0 0 {name=p1 lab=A}
 C {ipin.sym} 240 -380 0 0 {name=p2 lab=B}

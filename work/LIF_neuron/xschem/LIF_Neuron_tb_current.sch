@@ -41,8 +41,6 @@ N 2340 -440 2340 -390 {lab=VSS}
 N 300 -780 300 -760 {lab=VSS}
 N 720 -620 940 -620 {lab=Vx}
 N 1300 -580 1360 -580 {lab=COMP}
-N 1880 -580 1880 -500 {lab=COMPB}
-N 1880 -440 1880 -390 {lab=VSS}
 N 2240 -580 2340 -580 {lab=SPIKEB}
 N 1960 -580 2040 -580 {lab=SPIKE}
 N 2120 -720 2120 -650 {lab=VDDB}
@@ -54,13 +52,15 @@ N 1780 -580 1880 -580 {lab=COMPB}
 N 100 -260 100 -240 {lab=GND}
 N 100 -380 100 -320 {lab=#net6}
 N 100 -460 100 -440 {lab=VDDB}
-C {code.sym} 1062.5 -347.5 0 0 {name=CODE only_toplevel=false 
+N 1880 -580 1880 -500 {lab=COMPB}
+N 1880 -440 1880 -390 {lab=VSS}
+C {code.sym} 1132.5 -347.5 0 0 {name=CODE only_toplevel=false 
 value="
 
-.param VDD = 0.5
+.param VDD = 0.6
 .param VSS = 0
 .param vctr = 0
-.param vref = 0.5
+.param vref = 0.6
 .param Cload = 20p
 .param Rsource = 1m
 
@@ -78,8 +78,8 @@ value="
 * >> Variables <<
 let Vhigh = 0.5
 let Vmid = Vhigh * 0.5
-let tstop = 0.5u
-let tstep = tstop/2.5k
+let tstop = 0.1u
+let tstep = tstop/10k
 
 * Run transient analysis
 tran $&tstep $&tstop
@@ -143,6 +143,8 @@ C {devices/code_shown.sym} 635 -332.5 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
 value="
 .lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.include $::MODELS_NGSPICE/diodes.lib
 .lib $::SG13G2_MODELS/cornerRES.lib res_typ
 .lib $::SG13G2_MODELS/cornerCAP.lib cap_typ
 "}
@@ -171,7 +173,7 @@ value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/capa.sym} 2340 -470 0 0 {name=Cload
+C {devices/capa.sym} 2340 -470 0 0 {name=CSPIKE
 m=1
 value=\{Cload\}
 footprint=1206
@@ -192,13 +194,7 @@ l=0.78e-6
 C {lab_wire.sym} 300 -780 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {sg13g2_pr/sub.sym} 300 -700 0 0 {name=l4 lab=sub!}
 C {lab_wire.sym} 1310 -580 0 1 {name=p1 sig_type=std_logic lab=COMP}
-C {lab_wire.sym} 1880 -430 3 0 {name=p3 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1800 -580 0 1 {name=p4 sig_type=std_logic lab=COMPB}
-C {devices/capa.sym} 1880 -470 0 0 {name=Cload1
-m=1
-value=\{Cload\}
-footprint=1206
-device="ceramic capacitor"}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 2120 -580 0 0 {name=xSPKB}
 C {lab_wire.sym} 2120 -670 3 1 {name=p6 sig_type=std_logic lab=VDDB}
 C {lab_wire.sym} 2120 -490 3 0 {name=p9 sig_type=std_logic lab=VSS}
@@ -206,7 +202,6 @@ C {lab_wire.sym} 1970 -580 0 1 {name=p13 sig_type=std_logic lab=SPIKE}
 C {/foss/designs/chipathon_2025/designs/ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 1660 -580 0 0 {name=xCOMPB}
 C {lab_wire.sym} 1660 -670 3 1 {name=p16 sig_type=std_logic lab=VDDB}
 C {lab_wire.sym} 1660 -490 3 0 {name=p17 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1510 -580 0 1 {name=p18 sig_type=std_logic lab=COMP}
 C {devices/gnd.sym} 100 -240 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 100 -460 0 0 {name=p15 sig_type=std_logic lab=VDDB}
 C {devices/res.sym} 100 -410 2 0 {name=RDD1
@@ -215,3 +210,10 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/vsource.sym} 100 -290 0 0 {name=VSP1 value=\{VDD\}}
+C {lab_wire.sym} 1560 -580 0 0 {name=p26 sig_type=std_logic lab=COMP}
+C {lab_wire.sym} 1880 -430 3 0 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/capa.sym} 1880 -470 0 0 {name=CCOMP
+m=1
+value=\{Cload\}
+footprint=1206
+device="ceramic capacitor"}
