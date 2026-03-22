@@ -13,8 +13,8 @@ Recently, the leaky integrate and fire (LIF) neuron model has become one of the 
 | Vx       | Analog | Input         | Input voltage          |
 | Vref     | Analog | Input         | Reference voltage      | 
 | RST      | Digital| Input         | Reset signal           |
-| COMP     | Digital| Output        | Output comparison      |
-| SPIKE    | Digital| Output        | Output spike           |
+| COMP     | Analog| Output        | Output comparison      |
+| SPIKE    | Analog| Output        | Output spike           |
 
 ## Team Members:
 
