@@ -6,15 +6,15 @@ Recently, the leaky integrate and fire (LIF) neuron model has become one of the 
 
 ### Pin list
 
-| Pin Name | Type    | Direction     |
-|----------|--------|--------------|
-| VDD      | Power  | Bidirectional |
-| VSS      | Power  | Bidirectional |
-| Vx       | Analog | Input         |
-| Vref     | Analog | Input         |
-| RST      | Digital| Input         |
-| COMP     | Digital| Output        |
-| SPIKE    | Digital| Output        |
+| Pin Name | Type    | Direction     | Description            |
+|----------|--------|--------------|------------------------|
+| VDD      | Power  | Bidirectional | Positive power supply  |
+| VSS      | Power  | Bidirectional | Negative power supply  |
+| Vx       | Analog | Input         | Input voltage          |
+| Vref     | Analog | Input         | Reference voltage      | 
+| RST      | Digital| Input         | Reset signal           |
+| COMP     | Analog| Output        | Output comparison      |
+| SPIKE    | Analog| Output        | Output spike           |
 
 ## Team Members:
 
