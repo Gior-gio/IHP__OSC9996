@@ -28,7 +28,6 @@ N 100 -640 100 -590 {lab=Vref}
 N 220 -640 220 -590 {lab=Vctr}
 N 220 -530 220 -470 {lab=#net2}
 N 320 -640 320 -620 {lab=VSS}
-N 720 -480 880 -480 {lab=Vx}
 N 2300 -440 2300 -360 {lab=SPIKEB}
 N 2300 -300 2300 -250 {lab=VSS}
 N 1840 -440 1840 -360 {lab=COMPB}
@@ -54,6 +53,7 @@ N 100 -120 100 -100 {lab=GND}
 N 100 -240 100 -180 {lab=#net6}
 N 100 -320 100 -300 {lab=VDDB}
 N 1240 -440 1300 -440 {lab=COMP}
+N 720 -480 880 -480 {lab=Vx}
 C {code.sym} 412.5 -647.5 0 0 {name=CODE only_toplevel=false 
 value="
 
@@ -78,7 +78,7 @@ let tstep = tstop/2.5k
 * Run transient analysis
 tran $&tstep $&tstop uic
 
-let IDD = -1*i(VSP)
+let IDD = -1*i(VSP1)
 meas tran I_avg AVG IDD from=tstep to=tstop
 let P_avg = abs(I_avg*Vhigh)
 
@@ -191,7 +191,7 @@ value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/vsource.sym} 220 -150 0 0 {name=VSP value=\{VDD\}}
+C {devices/vsource.sym} 220 -150 0 0 {name=VSP1 value=\{VDD\}}
 C {devices/gnd.sym} 100 -100 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 100 -320 0 0 {name=p20 sig_type=std_logic lab=VDDB}
 C {devices/res.sym} 100 -270 2 0 {name=RDD1
@@ -199,5 +199,5 @@ value=\{Rsource\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/vsource.sym} 100 -150 0 0 {name=VSP1 value=\{VDD\}}
+C {devices/vsource.sym} 100 -150 0 0 {name=VSP2 value=\{VDD\}}
 C {lab_wire.sym} 1250 -440 0 1 {name=p22 sig_type=std_logic lab=COMP}
