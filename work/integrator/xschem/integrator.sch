@@ -167,19 +167,19 @@ value=0}
 C {lab_wire.sym} 150 -490 0 0 {name=p13 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 80 -250 0 0 {name=p17 sig_type=std_logic lab=Vref}
 C {lab_wire.sym} 60 -410 0 0 {name=p21 sig_type=std_logic lab=VctrPR}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 540 -730 0 0 {name=xIP0}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 540 -730 0 0 {name=xIP0}
 C {lab_wire.sym} 660 -780 2 1 {name=p42 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1020 -730 0 0 {name=xIP1}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1020 -730 0 0 {name=xIP1}
 C {lab_wire.sym} 1140 -780 2 1 {name=p44 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1470 -730 0 0 {name=xIP2}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1470 -730 0 0 {name=xIP2}
 C {lab_wire.sym} 1590 -780 2 1 {name=p46 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1920 -730 0 0 {name=xIP3}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1920 -730 0 0 {name=xIP3}
 C {lab_wire.sym} 2040 -780 2 1 {name=p54 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 2390 -730 0 0 {name=xIP4}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 2390 -730 0 0 {name=xIP4}
 C {lab_wire.sym} 2510 -780 2 1 {name=p58 sig_type=std_logic lab=VSS
 value=0}
 C {lab_wire.sym} 180 -910 2 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -202,23 +202,23 @@ C {lab_wire.sym} 2410 -840 0 0 {name=p60 sig_type=std_logic lab=Vctr}
 C {lab_wire.sym} 620 -720 0 0 {name=p84 sig_type=std_logic lab=RST}
 C {lab_wire.sym} 1550 -720 0 0 {name=p25 sig_type=std_logic lab=RST}
 C {lab_wire.sym} 2470 -725 0 0 {name=p79 sig_type=std_logic lab=RST}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 1150 -1150 3 0 {name=xPD0}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 1150 -1150 3 0 {name=xPD0}
 C {lab_wire.sym} 760 -1360 3 0 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1000 -1360 1 1 {name=p11 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 1610 -1150 3 0 {name=xPD1}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 1610 -1150 3 0 {name=xPD1}
 C {lab_wire.sym} 1220 -1360 3 0 {name=p27 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1460 -1360 1 1 {name=p62 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 2050 -1150 3 0 {name=xPD2}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 2050 -1150 3 0 {name=xPD2}
 C {lab_wire.sym} 1660 -1360 3 0 {name=p33 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1900 -1360 1 1 {name=p39 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 2490 -1150 3 0 {name=xPD3}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 2490 -1150 3 0 {name=xPD3}
 C {lab_wire.sym} 2100 -1360 3 0 {name=p41 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 2340 -1360 1 1 {name=p43 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 2970 -1150 3 0 {name=xPD4}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_phasedetector/xschem/integrator_phasedetector.sym} 2970 -1150 3 0 {name=xPD4}
 C {lab_wire.sym} 2580 -1360 3 0 {name=p64 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 2820 -1360 1 1 {name=p65 sig_type=std_logic lab=VSS
 value=0}
@@ -263,29 +263,29 @@ m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 540 -240 0 0 {name=xIR0}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 540 -240 0 0 {name=xIR0}
 C {lab_wire.sym} 660 -290 2 1 {name=p3 sig_type=std_logic lab=VSS
 value=0}
 C {lab_wire.sym} 620 -230 0 0 {name=p6 sig_type=std_logic lab=RST}
 C {lab_wire.sym} 660 -500 0 0 {name=p7 sig_type=std_logic lab=VDD}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1020 -240 0 0 {name=xIR1}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1020 -240 0 0 {name=xIR1}
 C {lab_wire.sym} 1140 -290 2 1 {name=p8 sig_type=std_logic lab=VSS
 value=0}
 C {lab_wire.sym} 1140 -480 0 0 {name=p19 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1100 -230 2 1 {name=p20 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1470 -240 0 0 {name=xIR2}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1470 -240 0 0 {name=xIR2}
 C {lab_wire.sym} 1590 -290 2 1 {name=p22 sig_type=std_logic lab=VSS
 value=0}
 C {lab_wire.sym} 1550 -230 0 0 {name=p26 sig_type=std_logic lab=RST}
 C {lab_wire.sym} 1590 -500 0 0 {name=p28 sig_type=std_logic lab=VDD}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1920 -240 0 0 {name=xIR3}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 1920 -240 0 0 {name=xIR3}
 C {lab_wire.sym} 2040 -290 2 1 {name=p29 sig_type=std_logic lab=VSS
 value=0}
 C {lab_wire.sym} 2040 -500 0 0 {name=p32 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 2000 -235 2 1 {name=p34 sig_type=std_logic lab=VSS
 value=0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 2390 -240 0 0 {name=xIR4}
+C {ROI_LIF_NEURON_UNIC-CASS/work/integrator_curstav_inv/xschem/integrator_curstav_inv.sym} 2390 -240 0 0 {name=xIR4}
 C {lab_wire.sym} 2510 -290 2 1 {name=p35 sig_type=std_logic lab=VSS
 value=0}
 C {lab_wire.sym} 2470 -235 0 0 {name=p38 sig_type=std_logic lab=RST}

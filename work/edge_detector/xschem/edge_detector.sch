@@ -70,11 +70,11 @@ C {ipin.sym} 80 -200 0 0 {name=p17 lab=IN}
 C {opin.sym} 1990 -180 0 0 {name=p18 lab=OUT}
 C {lab_pin.sym} 780 -200 3 1 {name=p21 sig_type=std_logic lab=I1}
 C {lab_pin.sym} 1400 -200 3 1 {name=p22 sig_type=std_logic lab=I3}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_and/xschem/gate_and.sym} 1810 -180 0 0 {name=xAND}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_and/xschem/gate_and.sym} 1810 -180 0 0 {name=xAND}
 C {lab_pin.sym} 1090 -200 3 1 {name=p1 sig_type=std_logic lab=I2
 }
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 260 -200 0 0 {name=xINV0}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 570 -200 0 0 {name=xINV1}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 880 -200 0 0 {name=xINV2}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 1190 -200 0 0 {name=xINV3}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 1500 -200 0 0 {name=xINV4}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 260 -200 0 0 {name=xINV0}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 570 -200 0 0 {name=xINV1}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 880 -200 0 0 {name=xINV2}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 1190 -200 0 0 {name=xINV3}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_inv_L0d65/xschem/gate_inv_L0d65.sym} 1500 -200 0 0 {name=xINV4}

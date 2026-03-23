@@ -146,7 +146,7 @@ C {lab_wire.sym} 610 -620 0 1 {name=p2 sig_type=std_logic lab=Vctr}
 C {lab_wire.sym} 1310 -620 0 1 {name=p7 sig_type=std_logic lab=MEM}
 C {lab_wire.sym} 2340 -430 3 0 {name=p49 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 2260 -580 0 1 {name=p50 sig_type=std_logic lab=SPIKEB}
-C {ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 810 -350 0 0 {name=xLIF}
+C {ROI_LIF_NEURON_UNIC-CASS/work/LIF_neuron/xschem/LIF_neuron.sym} 810 -350 0 0 {name=xLIF}
 C {devices/code_shown.sym} 625 -332.5 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -202,11 +202,11 @@ C {lab_wire.sym} 300 -780 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {sg13g2_pr/sub.sym} 300 -700 0 0 {name=l4 lab=sub!}
 C {lab_wire.sym} 1310 -580 0 1 {name=p1 sig_type=std_logic lab=COMP}
 C {lab_wire.sym} 1800 -580 0 1 {name=p4 sig_type=std_logic lab=COMPB}
-C {ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 2120 -580 0 0 {name=xSPKB}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_pad/xschem/gate_buff_pad.sym} 2120 -580 0 0 {name=xSPKB}
 C {lab_wire.sym} 2120 -670 3 1 {name=p6 sig_type=std_logic lab=VDDB}
 C {lab_wire.sym} 2120 -490 3 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1970 -580 0 1 {name=p13 sig_type=std_logic lab=SPIKE}
-C {ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 1660 -580 0 0 {name=xCOMPB}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_pad/xschem/gate_buff_pad.sym} 1660 -580 0 0 {name=xCOMPB}
 C {lab_wire.sym} 1660 -670 3 1 {name=p16 sig_type=std_logic lab=VDDB}
 C {lab_wire.sym} 1660 -490 3 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/gnd.sym} 100 -240 0 0 {name=l5 lab=GND}

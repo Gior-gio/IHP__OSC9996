@@ -59,7 +59,7 @@ C {lab_wire.sym} 800 -260 2 0 {name=p23 sig_type=std_logic lab=VDD
 C {lab_wire.sym} 800 -90 2 0 {name=p24 sig_type=std_logic lab=VSS
 
 }
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/edge_detector/xschem/edge_detector.sym} 540 -440 0 0 {name=xEDGE}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 -260 0 0 {name=xBSPK}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 10 0 0 {name=xBRST}
-C {/foss/designs/ROI_LIF_NEURON_UNIC-CASS/work/gate_or/xschem/gate_or.sym} 580 -170 0 0 {name=xOR}
+C {ROI_LIF_NEURON_UNIC-CASS/work/edge_detector/xschem/edge_detector.sym} 540 -440 0 0 {name=xEDGE}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 -260 0 0 {name=xBSPK}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_buff_L0d13/xschem/gate_buff_L0d13.sym} 540 10 0 0 {name=xBRST}
+C {ROI_LIF_NEURON_UNIC-CASS/work/gate_or/xschem/gate_or.sym} 580 -170 0 0 {name=xOR}
