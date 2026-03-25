@@ -48,10 +48,10 @@ C {code.sym} 382.5 -767.5 0 0 {name=CODE only_toplevel=false
 value="
 
 .temp 27
-.param VDD = 0.6
+.param VDD = 1.2
 .param VSS = 0
 .param vctr = 0
-.param vref = 0.6
+.param vref = 1.2
 .param Cload = 20p
 .param Rsource = 1m
 
@@ -136,6 +136,7 @@ value="
 .lib cornerMOShv.lib mos_tt
 .lib cornerRES.lib res_typ
 .lib cornerDIO.lib dio_tt
+.include /foss/designs/ROI_LIF_NEURON_UNIC-CASS/OSC9996-main/netlist/pex/TOP_ROILIFNEURON.spice
 "}
 C {devices/res.sym} 100 -410 2 0 {name=RDD
 value=\{Rsource\}
