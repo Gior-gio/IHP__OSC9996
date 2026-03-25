@@ -32,7 +32,7 @@ Recently, the leaky integrate and fire (LIF) neuron model has become one of the 
 
 The goal is to implement the three core building blocks of the LIF neuron as shown in the figure below: the integrator, the threshold circuit, and the spike generator. By wiring these up with one external resistor, the neuron’s behavior can be observed when input voltage pulses are applied. The design also includes a controlled reset through the Vrst pin. Depending on pin availability, extra outputs will be added to monitor the Vmem integrator output and the phases of the two ring oscillators.
 
-![Expected outcome](doc/Media_Readme/RO_Neuron_Functional.png)
+![Expected outcome](../doc/Media_Readme/RO_Neuron_Functional.png)
 
 This project seeks to show that this topology can serve as a basic building block for a spiking neural network. Multiple neurons can be interconnected on the same chip to form a small network, as demonstrated in [1]. By adding more input resistors in parallel, an N-input neuron can be created, where the synaptic weight is determined by the resistor ratio. Two neuron types are expected: one with internal resistors and another connected directly to the pads. The first type will test the feasibility of integration into an SNN accelerator, while the second will allow manual control of synaptic weights through the external resistor.
 
