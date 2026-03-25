@@ -1,0 +1,1509 @@
+* PEX produced on Mon Mar 23 09:47:19 PM CET 2026 using /foss/tools/sak/sak-pex.sh with m=2 and s=1
+* NGSPICE file created from TOP_ROILIFNEURON.ext - technology: ihp-sg13g2
+
+.subckt TOP_ROILIFNEURON VDD Vx MEM RST SPIKEB VSS Vref COMPB
+X0 VSS a_2538_4709# a_2130_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X1 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X2 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X3 a_3521_9195# a_3317_9195# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X4 VDD a_1071_4709# a_1003_4745# w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X5 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X6 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X7 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X8 VSS a_2130_4709# a_n553_4696# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X9 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X10 VSS a_2769_4709# a_2538_4709# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X11 VSS VSS VSS rppd l=0.5u w=0.5u
+X12 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X13 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X14 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X15 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=3.264p pd=19.88u as=1.824p ps=9.98u w=9.6u l=0.13u
+X16 a_3521_6967# a_3317_6967# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X17 a_6276_9217# a_1755_5366# VDD VDD sg13_lv_pmos ad=3.264p pd=19.88u as=3.264p ps=19.88u w=9.6u l=0.13u
+X18 VSS VSS VSS rppd l=0.5u w=0.5u
+X19 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X20 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X21 VSS a_3545_4709# a_3207_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+X22 VSS VSS VSS rppd l=0.5u w=0.5u
+X23 VSS VSS VSS rppd l=0.5u w=0.5u
+X24 a_1369_6967# a_1267_8081# a_1267_6967# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X25 VSS VSS VSS rppd l=0.5u w=0.5u
+X26 VDD VDD VSS rhigh l=0.96u w=0.5u
+X27 a_4828_5366# MEM VDD w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X28 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X29 a_3317_6967# a_2907_6967# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X30 VDD a_917_8508# a_1369_9195# w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X31 a_2907_6967# a_2584_6967# a_2805_6967# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X32 a_2907_10309# a_2584_10309# a_2805_10831# w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X33 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X34 a_1369_10309# a_1267_5853# a_1267_10309# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X35 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X36 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X37 a_3009_9195# a_1267_9195# a_2907_9195# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X38 a_3521_8081# MEM VSS rppd l=0.5u w=0.5u
+X39 a_1267_5853# a_1003_4745# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X40 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X41 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X42 a_1839_8081# VDD VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X43 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X44 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X45 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X46 a_1369_8081# a_1267_9195# a_1267_8081# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X47 VDD a_3883_4709# a_3545_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+X48 VDD a_1755_5366# a_4221_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+X49 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X50 VSS VSS VSS rppd l=0.5u w=0.5u
+X51 VSS RST a_1692_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X52 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X53 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X54 a_2907_8081# a_1267_8081# a_2805_8081# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X55 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X56 VSS VSS VSS rppd l=0.5u w=0.5u
+X57 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X58 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X59 VSS a_4828_5366# a_1755_5366# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X60 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X61 VDD a_6276_9217# a_6362_8126# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X62 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X63 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X64 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X65 a_6362_8126# a_6276_9217# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=3.264p ps=19.88u w=9.6u l=0.13u
+X66 a_3521_6967# a_3317_6967# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X67 a_n1715_6811# a_n899_9217# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X68 a_3521_10309# a_3317_10309# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X69 VDD a_2538_4709# a_2130_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X70 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X71 a_2584_10309# a_1267_10309# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X72 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X73 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X74 VSS a_3317_5853# a_3521_5853# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X75 a_3317_6967# a_2907_6967# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X76 a_1839_9195# VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X77 a_6362_8126# a_6276_9217# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X78 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X79 VDD a_2130_4709# a_n553_4696# w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X80 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X81 a_3521_8081# a_3317_8081# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X82 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X83 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X84 VSS a_n899_9217# a_n1715_6811# VSS sg13_lv_nmos ad=1.632p pd=10.28u as=0.912p ps=5.18u w=4.8u l=0.13u
+X85 a_1267_8081# VDD VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X86 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X87 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X88 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X89 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X90 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X91 a_1003_4745# a_1071_4709# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X92 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X93 VSS VSS VSS rppd l=0.5u w=0.5u
+X94 a_2805_10309# a_1839_10309# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X95 VSS a_2380_5853# a_3009_5853# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X96 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X97 VSS VSS VSS rppd l=0.5u w=0.5u
+X98 a_3317_8081# a_2907_8081# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X99 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X100 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X101 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X102 a_2584_5853# a_1267_5853# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X103 VDD a_917_8508# a_1369_6375# w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X104 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X105 a_2380_9195# a_1839_9195# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X106 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X107 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X108 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X109 a_3009_6375# a_1267_5853# a_2907_5853# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X110 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X111 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X112 VSS VSS VSS rppd l=0.5u w=0.5u
+X113 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X114 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X115 VSS VSS VSS rppd l=0.5u w=0.5u
+X116 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X117 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=1.632p pd=10.28u as=0.912p ps=5.18u w=4.8u l=0.13u
+X118 a_1839_10309# VDD VDD w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X119 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X120 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X121 VSS MEM a_4828_5366# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X122 a_1692_4709# RST a_1820_4745# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X123 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X124 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X125 VDD a_3317_8081# a_3521_8081# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X126 a_1267_9195# VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X127 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X128 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X129 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X130 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X131 VDD a_4828_5366# a_1755_5366# w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X132 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X133 a_2907_10309# a_1267_10309# a_2805_10309# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X134 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X135 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X136 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X137 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X138 VDD a_917_8508# a_1369_10831# w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X139 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X140 VSS Vx a_1369_7689# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X141 VSS VSS VSS rppd l=0.5u w=0.5u
+X142 VDD a_2380_8081# a_3009_8603# w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X143 VDD a_1755_5366# a_2769_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X144 a_3521_9195# MEM VSS rppd l=0.5u w=0.5u
+X145 a_3009_7689# a_2584_6967# a_2907_6967# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X146 a_2584_8081# a_1267_8081# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X147 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X148 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X149 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X150 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X151 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=3.264p ps=19.88u w=9.6u l=0.13u
+X152 a_1941_5853# a_1839_6967# a_1839_5853# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X153 VDD VDD VSS rhigh l=0.96u w=0.5u
+X154 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X155 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X156 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X157 VSS VSS VSS rppd l=0.5u w=0.5u
+X158 a_917_8508# a_917_8508# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X159 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X160 VSS a_3317_9195# a_3521_9195# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X161 a_1003_4745# a_1071_4709# VDD w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X162 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X163 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X164 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X165 a_n553_4696# a_2130_4709# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X166 a_2380_5853# a_1839_5853# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X167 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X168 VDD a_3317_10309# a_3521_10309# w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X169 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X170 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X171 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X172 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X173 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=3.264p ps=19.88u w=9.6u l=0.13u
+X174 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X175 VSS a_2380_9195# a_3009_9917# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X176 VSS VSS VSS rppd l=0.5u w=0.5u
+X177 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X178 a_2584_9195# a_1267_9195# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X179 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X180 VDD a_917_8508# a_1369_6967# w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X181 VSS VSS VSS rppd l=0.5u w=0.5u
+X182 VDD VDD VSS rhigh l=4u w=0.5u
+X183 VDD MEM a_4828_5366# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X184 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X185 a_2804_11753# a_3837_11577# VSS rhigh l=4u w=0.5u
+X186 VSS a_4221_4709# a_3883_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+X187 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X188 a_3009_6967# a_1267_6967# a_2907_6967# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X189 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X190 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=3.264p ps=19.88u w=9.6u l=0.13u
+X191 VSS VSS VSS rppd l=0.5u w=0.5u
+X192 a_1918_11577# a_885_11577# VSS rhigh l=4u w=0.5u
+X193 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X194 a_1941_8603# a_1839_9195# a_1839_8081# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X195 a_1369_5853# a_1267_6967# a_1267_5853# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X196 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X197 a_2805_9195# a_1839_9195# VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X198 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X199 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X200 VSS Vx a_1369_8081# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X201 VDD a_917_6931# a_1941_9195# w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X202 a_2907_5853# a_1267_5853# a_2805_5853# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X203 VSS VSS VSS rppd l=0.5u w=0.5u
+X204 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X205 a_3009_8081# a_2584_8081# a_2907_8081# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X206 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X207 a_2380_6967# a_1839_6967# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X208 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X209 a_1839_10309# a_1003_4745# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X210 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X211 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X212 a_3317_10309# a_2907_10309# VDD w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X213 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X214 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X215 a_2380_10309# a_1839_10309# VDD w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X216 VDD VDD VSS rhigh l=0.96u w=0.5u
+X217 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X218 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X219 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X220 VDD a_6276_9217# a_6362_8126# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X221 VDD a_n899_9217# a_n1715_6811# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X222 VSS VSS VSS rppd l=0.5u w=0.5u
+X223 VSS a_n553_4696# a_n899_9217# VSS sg13_lv_nmos ad=1.632p pd=10.28u as=1.632p ps=10.28u w=4.8u l=0.13u
+X224 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X225 a_3009_10831# a_1267_10309# a_2907_10309# w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X226 VSS Vx a_1369_10309# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X227 a_3521_5853# a_3317_5853# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X228 VSS VSS VSS rppd l=0.5u w=0.5u
+X229 a_1941_9917# a_1839_10309# a_1839_9195# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X230 a_3521_9195# a_3317_9195# VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X231 a_n553_4696# a_2130_4709# VDD w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X232 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X233 VSS a_6276_9217# a_6362_8126# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X234 VSS VSS VSS rppd l=0.5u w=0.5u
+X235 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X236 a_6362_8126# a_6276_9217# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=1.632p ps=10.28u w=4.8u l=0.13u
+X237 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X238 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X239 a_n1715_6811# a_n899_9217# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X240 a_1369_8603# a_1267_9195# a_1267_8081# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X241 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X242 a_3317_5853# a_2907_5853# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X243 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X244 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X245 VSS VSS VSS rppd l=0.5u w=0.5u
+X246 a_3521_9195# MEM VSS rppd l=0.5u w=0.5u
+X247 VSS a_1071_4709# a_1003_4745# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X248 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X249 a_2907_8081# a_2584_8081# a_2805_8603# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X250 VDD VDD VSS rhigh l=4u w=0.5u
+X251 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=1.632p pd=10.28u as=0.912p ps=5.18u w=4.8u l=0.13u
+X252 a_3984_11577# MEM VSS rhigh l=4u w=0.5u
+X253 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X254 a_2380_6967# a_1839_6967# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X255 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X256 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X257 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X258 VSS VSS VSS rppd l=0.5u w=0.5u
+X259 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X260 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X261 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X262 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X263 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X264 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X265 a_2805_6375# a_1839_5853# VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X266 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X267 VSS a_3317_10309# a_3521_10309# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X268 a_3521_5853# MEM VSS rppd l=0.5u w=0.5u
+X269 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X270 VDD a_917_6931# a_1941_6375# w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X271 VSS VSS VSS rppd l=0.5u w=0.5u
+X272 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X273 a_2380_8081# a_1839_8081# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X274 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X275 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X276 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X277 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X278 a_3521_8081# a_3317_8081# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X279 VDD VDD VSS rhigh l=4u w=0.5u
+X280 Vx a_1771_11577# VSS rhigh l=4u w=0.5u
+X281 a_1369_9917# a_1267_10309# a_1267_9195# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X282 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X283 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X284 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X285 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X286 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X287 VSS a_3207_4709# a_2840_5276# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+X288 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X289 a_2907_9195# a_1267_9195# a_2805_9917# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X290 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X291 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X292 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X293 VSS VSS VSS rppd l=0.5u w=0.5u
+X294 a_3317_8081# a_2907_8081# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X295 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X296 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X297 VDD a_2769_4709# a_2538_4709# w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X298 a_3521_10309# MEM VSS rppd l=0.5u w=0.5u
+X299 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X300 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X301 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X302 a_3521_5853# a_3317_5853# VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X303 a_2805_7689# a_1839_6967# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X304 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X305 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X306 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X307 VSS VREF a_1941_7689# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X308 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X309 a_3317_10309# a_2907_10309# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X310 VDD a_3545_4709# a_3207_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+X311 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X312 a_1839_9195# VDD VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X313 a_1941_10831# a_1839_5853# a_1839_10309# w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X314 a_2380_10309# a_1839_10309# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X315 VDD VDD VSS rhigh l=4u w=0.5u
+X316 VSS VSS VSS rppd l=0.5u w=0.5u
+X317 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X318 VDD a_1071_4709# a_1003_4745# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X319 a_3521_9195# a_3317_9195# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X320 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X321 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X322 VSS VSS VSS rppd l=0.5u w=0.5u
+X323 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X324 VSS VSS VSS rppd l=0.5u w=0.5u
+X325 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X326 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X327 VSS a_2130_4709# a_n553_4696# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X328 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X329 VSS VSS VSS rppd l=0.5u w=0.5u
+X330 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X331 a_3009_10309# a_2584_10309# a_2907_10309# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X332 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X333 a_3317_9195# a_2907_9195# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X334 a_2897_5460# a_2840_5276# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X335 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X336 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X337 VDD VDD VSS rhigh l=0.96u w=0.5u
+X338 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X339 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X340 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X341 a_3521_6967# a_3317_6967# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X342 VSS VSS VSS rppd l=0.5u w=0.5u
+X343 a_3521_10309# MEM VSS rppd l=0.5u w=0.5u
+X344 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X345 VSS VSS VSS rppd l=0.5u w=0.5u
+X346 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X347 VSS VSS VSS rppd l=0.5u w=0.5u
+X348 a_2805_6967# a_1839_6967# VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X349 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X350 VSS Vx a_1369_5853# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X351 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X352 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X353 VDD a_917_6931# a_1941_6967# w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X354 a_1267_9195# VDD VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X355 VDD a_2380_10309# a_3009_10831# w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X356 a_3009_5853# a_2584_5853# a_2907_5853# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X357 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X358 VSS VSS VSS rppd l=0.5u w=0.5u
+X359 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X360 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X361 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X362 a_3521_10309# a_3317_10309# VDD w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X363 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X364 a_2805_8081# a_1839_8081# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X365 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X366 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=1.632p ps=10.28u w=4.8u l=0.13u
+X367 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X368 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X369 VSS VREF a_1941_8081# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X370 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X371 VSS a_1692_4709# a_1479_4709# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X372 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X373 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X374 a_1839_5853# VDD VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X375 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=1.632p pd=10.28u as=0.912p ps=5.18u w=4.8u l=0.13u
+X376 a_1267_10309# VDD VDD w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X377 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X378 a_6276_9217# a_1755_5366# VSS VSS sg13_lv_nmos ad=1.632p pd=10.28u as=1.632p ps=10.28u w=4.8u l=0.13u
+X379 a_n1715_6811# a_n899_9217# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X380 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X381 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X382 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X383 a_3521_6967# a_3317_6967# VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X384 VSS VSS VSS rppd l=0.5u w=0.5u
+X385 VSS VSS VSS rppd l=0.5u w=0.5u
+X386 VSS VSS VSS rppd l=0.5u w=0.5u
+X387 VDD a_3317_9195# a_3521_9195# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X388 VDD a_2130_4709# a_n553_4696# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X389 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X390 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X391 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X392 VSS a_3883_4709# a_3545_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+X393 VSS a_6276_9217# a_6362_8126# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X394 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X395 VSS a_1755_5366# a_4221_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.65u
+X396 VSS a_n899_9217# a_n1715_6811# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X397 VDD a_917_8508# a_1369_8603# w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X398 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X399 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X400 VSS VSS VSS rppd l=0.5u w=0.5u
+X401 a_3009_8603# a_1267_8081# a_2907_8081# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X402 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X403 a_3521_8081# a_3317_8081# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X404 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X405 a_1941_10309# a_1839_5853# a_1839_10309# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X406 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X407 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X408 VDD a_2380_9195# a_3009_9195# w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X409 a_3521_5853# MEM VSS rppd l=0.5u w=0.5u
+X410 VSS VSS VSS rppd l=0.5u w=0.5u
+X411 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X412 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X413 a_2584_9195# a_1267_9195# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X414 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X415 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X416 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X417 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X418 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X419 a_1839_6967# VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X420 a_2951_11577# a_3837_11577# VSS rhigh l=4u w=0.5u
+X421 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X422 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X423 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X424 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X425 a_2380_5853# a_1839_5853# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X426 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X427 a_1267_5853# VDD VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X428 VDD a_6362_8126# a_6770_4732# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X429 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X430 a_3521_6967# MEM VSS rppd l=0.5u w=0.5u
+X431 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X432 VDD VDD VSS rhigh l=0.96u w=0.5u
+X433 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X434 VDD VDD VSS rhigh l=0.96u w=0.5u
+X435 VDD a_917_6931# a_1941_10831# w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X436 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X437 VSS Vx a_1369_9917# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X438 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X439 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X440 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X441 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X442 a_3009_9917# a_2584_9195# a_2907_9195# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X443 VDD a_1692_4709# a_1479_4709# w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X444 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X445 VSS VSS VSS rppd l=0.5u w=0.5u
+X446 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X447 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X448 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X449 VSS a_2380_10309# a_3009_10309# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X450 VSS VSS VSS rppd l=0.5u w=0.5u
+X451 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X452 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X453 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X454 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X455 VDD a_3317_5853# a_3521_5853# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X456 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X457 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X458 a_1839_6967# VDD VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X459 a_1267_6967# VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X460 a_3521_10309# a_3317_10309# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X461 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X462 a_1941_9195# a_1839_10309# a_1839_9195# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X463 a_2380_8081# a_1839_8081# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X464 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X465 a_1267_10309# a_1003_4745# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X466 VDD a_4221_4709# a_3883_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+X467 VDD a_2380_5853# a_3009_6375# w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X468 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X469 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X470 a_3521_6967# MEM VSS rppd l=0.5u w=0.5u
+X471 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X472 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X473 a_2584_5853# a_1267_5853# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X474 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X475 a_1839_8081# a_1003_4745# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X476 VSS VSS VSS rppd l=0.5u w=0.5u
+X477 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X478 a_3984_11577# a_2951_11577# VSS rhigh l=4u w=0.5u
+X479 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X480 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X481 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X482 a_2769_4709# a_1755_5366# a_2897_5460# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X483 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X484 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X485 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X486 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X487 VSS a_3317_6967# a_3521_6967# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X488 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X489 VSS VSS VSS rppd l=0.5u w=0.5u
+X490 VSS VSS VSS rppd l=0.5u w=0.5u
+X491 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X492 VDD a_n553_4696# a_n899_9217# VDD sg13_lv_pmos ad=3.264p pd=19.88u as=3.264p ps=19.88u w=9.6u l=0.13u
+X493 VSS VSS VSS rppd l=0.5u w=0.5u
+X494 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X495 a_2380_9195# a_1839_9195# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X496 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=1.632p ps=10.28u w=4.8u l=0.13u
+X497 a_1267_6967# VDD VDD w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X498 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X499 a_885_11577# a_1771_11577# VSS rhigh l=4u w=0.5u
+X500 a_1369_9195# a_1267_10309# a_1267_9195# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X501 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X502 VSS a_2380_6967# a_3009_7689# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X503 a_2805_5853# a_1839_5853# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X504 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X505 a_2907_9195# a_2584_9195# a_2805_9195# w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X506 VSS VSS VSS rppd l=0.5u w=0.5u
+X507 a_2584_6967# a_1267_6967# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X508 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X509 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X510 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X511 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X512 VSS VREF a_1941_5853# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X513 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X514 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X515 a_1267_8081# a_1003_4745# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X516 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X517 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=3.264p pd=19.88u as=1.824p ps=9.98u w=9.6u l=0.13u
+X518 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X519 a_1692_4709# a_1755_5366# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X520 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X521 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=1.632p ps=10.28u w=4.8u l=0.13u
+X522 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X523 a_1941_6375# a_1839_6967# a_1839_5853# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X524 VSS VREF a_1941_10309# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X525 VSS VSS VSS rppd l=0.5u w=0.5u
+X526 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X527 a_917_6931# VREF VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X528 VDD VDD VSS rhigh l=4u w=0.5u
+X529 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X530 a_1755_5366# a_4828_5366# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X531 a_6362_8126# a_6276_9217# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X532 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X533 VDD a_3317_6967# a_3521_6967# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X534 VDD a_n899_9217# a_n1715_6811# VDD sg13_lv_pmos ad=3.264p pd=19.88u as=1.824p ps=9.98u w=9.6u l=0.13u
+X535 a_3521_9195# a_3317_9195# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X536 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X537 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X538 a_n1715_6811# a_n899_9217# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X539 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X540 a_3521_5853# a_3317_5853# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X541 VSS a_1479_4709# a_1071_4709# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X542 a_3317_9195# a_2907_9195# VDD w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X543 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X544 VDD a_2380_6967# a_3009_6967# w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X545 VSS a_3317_8081# a_3521_8081# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X546 a_2805_8603# a_1839_8081# VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X547 VDD a_n1715_6811# a_n4986_6715# VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X548 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X549 a_2584_6967# a_1267_6967# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X550 a_3521_8081# MEM VSS rppd l=0.5u w=0.5u
+X551 a_n4986_6715# a_n1715_6811# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X552 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X553 VDD a_917_6931# a_1941_8603# w_787_8528# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X554 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X555 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X556 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X557 a_1941_7689# a_1839_8081# a_1839_6967# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X558 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=3.264p pd=19.88u as=1.824p ps=9.98u w=9.6u l=0.13u
+X559 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X560 VSS a_1071_4709# a_1003_4745# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X561 VDD a_3207_4709# a_2840_5276# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.65u
+X562 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X563 VSS VSS VSS rppd l=0.5u w=0.5u
+X564 a_1369_10831# a_1267_5853# a_1267_10309# w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X565 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X566 a_6770_4732# a_6362_8126# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X567 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X568 a_1369_6375# a_1267_6967# a_1267_5853# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X569 VSS a_2380_8081# a_3009_8081# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X570 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X571 a_2584_8081# a_1267_8081# VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X572 a_2907_5853# a_2584_5853# a_2805_6375# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X573 a_917_6931# a_917_6931# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X574 a_n4986_6715# a_n1715_6811# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X575 a_6770_4732# a_6362_8126# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X576 VSS VSS VSS rppd l=0.5u w=0.5u
+X577 VSS a_n1715_6811# a_n4986_6715# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X578 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X579 VSS VSS VSS rppd l=0.5u w=0.5u
+X580 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X581 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X582 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X583 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X584 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X585 a_4828_5366# MEM VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X586 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X587 VSS VSS VSS rppd l=0.5u w=0.5u
+X588 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X589 VDD VDD VSS rhigh l=4u w=0.5u
+X590 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X591 a_1820_4745# a_1755_5366# VDD w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X592 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X593 a_917_8508# Vx VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X594 a_1918_11577# a_2804_11753# VSS rhigh l=4u w=0.5u
+X595 a_2805_9917# a_1839_9195# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X596 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X597 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X598 VDD VDD VSS rhigh l=4u w=0.5u
+X599 a_3521_8081# a_3317_8081# VDD w_787_8528# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X600 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X601 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X602 VSS a_6362_8126# a_6770_4732# VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X603 a_3521_10309# a_3317_10309# VDD w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X604 VSS VREF a_1941_9917# VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X605 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X606 a_1755_5366# a_4828_5366# VDD w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X607 a_2584_10309# a_1267_10309# VDD w_783_10756# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X608 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X609 COMPB a_6770_4732# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X610 VSS a_n4986_6715# SPIKEB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X611 COMPB a_6770_4732# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X612 a_3521_5853# a_3317_5853# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.13u
+X613 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X614 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X615 a_1941_6967# a_1839_8081# a_1839_6967# w_787_6793# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X616 a_1369_7689# a_1267_8081# a_1267_6967# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X617 a_2769_4709# a_2840_5276# VDD w_889_4565# sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
+X618 VDD VDD VSS rhigh l=0.96u w=0.5u
+X619 VSS VSS VSS rppd l=0.5u w=0.5u
+X620 VDD VDD VSS rhigh l=0.96u w=0.5u
+X621 a_2907_6967# a_1267_6967# a_2805_7689# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X622 VDD a_6770_4732# COMPB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X623 a_3317_5853# a_2907_5853# VDD w_787_6793# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X624 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X625 VDD a_1479_4709# a_1071_4709# w_889_4565# sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+X626 VDD a_n4986_6715# SPIKEB VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X627 a_1839_5853# a_1003_4745# VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X628 SPIKEB a_n4986_6715# VDD VDD sg13_lv_pmos ad=1.824p pd=9.98u as=1.824p ps=9.98u w=9.6u l=0.13u
+X629 a_2805_10831# a_1839_10309# VDD w_783_10756# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
+X630 VSS a_6770_4732# COMPB VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X631 SPIKEB a_n4986_6715# VSS VSS sg13_lv_nmos ad=0.912p pd=5.18u as=0.912p ps=5.18u w=4.8u l=0.13u
+X632 VDD VDD VSS rhigh l=4u w=0.5u
+X633 a_1941_8081# a_1839_9195# a_1839_8081# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+C0 a_3317_8081# a_1267_8081# 0.01086f
+C1 a_4821_6160# a_4821_5948# 0.01085f
+C2 MEM a_4437_10831# 0.0107f
+C3 a_4437_7482# a_4437_7694# 0.01085f
+C4 a_1267_9195# a_1267_5853# 0.76752f
+C5 VDD a_1820_4745# 0.23642f
+C6 MEM a_2951_11577# 0.07377f
+C7 RST a_3207_4709# 0.10055f
+C8 a_538_11753# Vx 0.01178f
+C9 a_1267_8081# a_1369_8081# 0.1037f
+C10 a_n1715_6811# Vx 0.01019f
+C11 a_2907_10309# a_1267_10309# 0.37961f
+C12 a_4437_7267# a_4437_7055# 0.01085f
+C13 a_1839_5853# a_2380_10309# 0.01728f
+C14 w_889_4565# a_1071_4709# 0.19352f
+C15 a_1839_8081# a_1941_8081# 0.10389f
+C16 a_1267_8081# a_2380_8081# 0.59629f
+C17 w_787_8528# a_917_6931# 0.1745f
+C18 a_2584_9195# a_2584_10309# 0.07395f
+C19 a_1003_4745# a_1839_9195# 1.10729f
+C20 a_4437_6160# a_4437_5948# 0.01085f
+C21 a_3317_10309# a_2380_10309# 0.0172f
+C22 a_3984_11577# a_4070_11753# 0.01578f
+C23 a_1839_8081# a_2584_8081# 0.20243f
+C24 VDD a_3883_4709# 0.34161f
+C25 MEM a_4437_6375# 0.01012f
+C26 a_2907_10309# a_1839_10309# 0.01075f
+C27 a_2584_9195# w_787_8528# 0.08114f
+C28 a_1941_6967# a_1839_6967# 0.20989f
+C29 MEM a_6276_9217# 0.0172f
+C30 a_2380_9195# a_2907_9195# 0.20077f
+C31 w_783_10756# a_1003_4745# 0.02201f
+C32 a_2004_11753# a_2004_11933# 0.12339f
+C33 a_2907_5853# a_1755_5366# 0.01039f
+C34 a_1267_9195# a_2805_9917# 0.01675f
+C35 a_1839_8081# VDD 0.46896f
+C36 a_2584_6967# a_1839_5853# 0.02221f
+C37 a_1839_5853# a_1941_10309# 0.01457f
+C38 a_2584_5853# a_2380_5853# 0.83117f
+C39 RST a_1692_4709# 0.22324f
+C40 VDD a_3009_6967# 0.2331f
+C41 a_3521_6967# a_3521_8081# 0.02864f
+C42 a_1267_8081# a_1003_4745# 0.14084f
+C43 VDD a_1369_6967# 0.23451f
+C44 a_917_8508# VREF 0.02206f
+C45 VREF a_1839_5853# 4.42108f
+C46 a_2380_9195# a_3317_9195# 0.0172f
+C47 a_917_8508# a_1369_9195# 0.01353f
+C48 VDD a_2805_10831# 0.23816f
+C49 a_1839_5853# a_n553_4696# 0.01495f
+C50 a_4821_9495# a_4821_9710# 0.01056f
+C51 w_787_6793# a_1003_4745# 0.02415f
+C52 a_917_8508# a_1369_6375# 0.01186f
+C53 a_1771_11577# a_885_11577# 0.02649f
+C54 a_1839_10309# a_1941_9195# 0.01707f
+C55 a_4070_11753# a_4070_11577# 0.13024f
+C56 a_4070_11441# a_4070_11577# 0.29305f
+C57 a_2380_5853# w_787_6793# 0.07605f
+C58 a_917_6931# a_1839_9195# 0.669f
+C59 a_3037_11577# a_3837_11577# 0.01566f
+C60 VDD w_889_4565# 0.55823f
+C61 a_1941_6375# VDD 0.23375f
+C62 a_3521_9195# w_787_8528# 0.04918f
+C63 a_1369_7689# a_1267_8081# 0.02351f
+C64 w_783_10756# a_3037_11441# 0.05936f
+C65 MEM a_4437_6160# 0.01042f
+C66 a_2584_9195# a_1839_9195# 0.20139f
+C67 VDD a_2907_9195# 0.08865f
+C68 a_n4986_6715# a_n1715_6811# 3.82146f
+C69 VDD Vx 0.99093f
+C70 w_783_10756# a_917_6931# 0.0782f
+C71 a_1267_8081# a_1267_6967# 0.22895f
+C72 a_n553_4696# a_n899_9217# 0.24909f
+C73 RST a_1820_4745# 0.05001f
+C74 a_2584_6967# a_2805_6967# 0.04511f
+C75 MEM a_3521_9195# 0.11582f
+C76 VDD a_1941_10831# 0.23759f
+C77 a_538_11753# a_538_11577# 0.03126f
+C78 a_2004_11753# a_2804_11753# 0.01525f
+C79 MEM a_4437_10616# 0.01035f
+C80 a_2130_4709# w_889_4565# 0.19248f
+C81 a_1820_4745# a_1692_4709# 0.19991f
+C82 VDD a_3521_8081# 0.69038f
+C83 a_1267_6967# w_787_6793# 0.29335f
+C84 a_2380_9195# a_1839_5853# 0.02077f
+C85 a_3009_5853# a_2907_5853# 0.09917f
+C86 a_971_11577# a_971_11753# 0.13024f
+C87 a_n899_9217# a_n1715_6811# 1.15391f
+C88 VDD a_4828_5366# 0.50087f
+C89 a_2907_5853# a_3009_6375# 0.21534f
+C90 a_2584_10309# a_1267_10309# 0.678f
+C91 a_3009_6967# a_2907_6967# 0.21534f
+C92 a_1267_8081# a_917_6931# 0.02941f
+C93 RST a_3883_4709# 0.10013f
+C94 VDD a_3317_9195# 0.51097f
+C95 a_2907_8081# a_2584_8081# 0.34325f
+C96 w_787_8528# a_1267_10309# 0.0595f
+C97 a_1941_6375# a_1267_5853# 0.01275f
+C98 a_885_11577# a_1918_11577# 0.02597f
+C99 a_917_6931# w_787_6793# 0.3204f
+C100 VDD a_1941_8603# 0.23382f
+C101 a_2584_10309# a_1839_10309# 0.20228f
+C102 a_3207_4709# w_889_4565# 0.20618f
+C103 a_2380_6967# a_3317_6967# 0.0172f
+C104 a_1479_4709# a_n553_4696# 0.03118f
+C105 a_1267_5853# Vx 0.15819f
+C106 VDD a_971_11753# 0.08589f
+C107 a_1839_5853# a_2584_8081# 0.01989f
+C108 a_1839_10309# w_787_8528# 0.05928f
+C109 VDD a_4070_11441# 0.25546f
+C110 VDD a_4070_11753# 0.08633f
+C111 a_1839_8081# a_1267_9195# 0.01817f
+C112 VREF a_1003_4745# 0.46221f
+C113 VDD a_2907_8081# 0.0884f
+C114 a_n553_4696# a_1003_4745# 0.23843f
+C115 a_6362_8126# a_6276_9217# 1.15391f
+C116 a_2951_11577# a_3037_11753# 0.02034f
+C117 a_2951_11577# a_3984_11577# 0.02622f
+C118 a_2584_10309# a_2907_10309# 0.3331f
+C119 a_6362_8126# a_6770_4732# 3.82146f
+C120 a_4821_7482# a_4821_7267# 0.01056f
+C121 a_917_8508# VDD 0.75398f
+C122 a_2584_6967# a_1267_6967# 0.71176f
+C123 VDD a_1839_5853# 0.61679f
+C124 a_1941_5853# a_1839_5853# 0.10077f
+C125 VDD a_3317_10309# 0.5324f
+C126 a_1479_4709# a_1071_4709# 0.14353f
+C127 a_3545_4709# a_1755_5366# 0.20177f
+C128 a_2907_8081# a_3009_8603# 0.21534f
+C129 VDD a_n4986_6715# 28.7688f
+C130 MEM a_4437_7267# 0.01058f
+C131 RST w_889_4565# 0.1669f
+C132 a_3009_9917# a_2907_9195# 0.09922f
+C133 a_2538_4709# a_2840_5276# 0.02801f
+C134 a_4437_9495# a_4437_9283# 0.01085f
+C135 a_1369_9917# a_1267_10309# 0.02342f
+C136 a_2805_9917# a_2907_9195# 0.09917f
+C137 a_2584_8081# a_2380_8081# 0.83154f
+C138 VREF a_1267_6967# 0.04579f
+C139 a_2004_11441# a_2004_11577# 0.29305f
+C140 w_889_4565# a_1692_4709# 0.07714f
+C141 VDD a_3009_9195# 0.2331f
+C142 a_1071_4709# a_1003_4745# 0.42133f
+C143 a_1267_10309# a_1839_9195# 0.01073f
+C144 VDD a_3317_8081# 0.51089f
+C145 VDD a_538_11577# 0.03563f
+C146 a_2584_9195# a_2805_9195# 0.04511f
+C147 a_1369_6375# a_1267_6967# 0.03293f
+C148 a_1267_9195# a_2907_9195# 0.37517f
+C149 a_1267_9195# Vx 0.19265f
+C150 a_885_11577# a_971_11577# 0.05224f
+C151 VDD a_n899_9217# 2.34622f
+C152 a_2951_11577# a_4070_11577# 0.05255f
+C153 w_783_10756# a_1267_10309# 0.21243f
+C154 a_2380_5853# a_3317_5853# 0.0172f
+C155 a_1839_10309# a_1839_9195# 0.23591f
+C156 a_4053_11043# a_4053_10831# 0.01085f
+C157 a_6362_8126# COMPB 0.13928f
+C158 VREF a_917_6931# 5.11125f
+C159 VDD a_2380_8081# 0.45772f
+C160 a_2907_5853# a_2584_5853# 0.3427f
+C161 RST a_4828_5366# 0.02454f
+C162 a_2907_8081# a_2805_8603# 0.20304f
+C163 a_2538_4709# a_2769_4709# 0.13146f
+C164 a_2907_6967# a_2907_8081# 0.01112f
+C165 a_917_8508# a_1267_5853# 0.17251f
+C166 a_1839_5853# a_1267_5853# 0.96879f
+C167 a_4053_8388# a_4053_8176# 0.01085f
+C168 VDD a_2805_6967# 0.2331f
+C169 a_1839_10309# w_783_10756# 0.19214f
+C170 a_4437_9922# a_4437_9710# 0.01085f
+C171 a_1267_9195# a_3317_9195# 0.01067f
+C172 a_2380_6967# a_1839_6967# 0.19576f
+C173 VDD a_885_11577# 1.4881f
+C174 MEM a_1755_5366# 0.36787f
+C175 a_2907_5853# w_787_6793# 0.09744f
+C176 VDD a_4821_11043# 0.01132f
+C177 VDD a_1479_4709# 0.44021f
+C178 a_2907_10309# w_783_10756# 0.09699f
+C179 VDD a_1003_4745# 1.28301f
+C180 a_3521_10309# a_3317_10309# 0.40843f
+C181 a_2805_8081# a_1267_8081# 0.01675f
+C182 a_3883_4709# w_889_4565# 0.20612f
+C183 a_538_11577# a_538_11441# 0.07033f
+C184 VDD a_2380_5853# 0.46136f
+C185 a_2584_9195# a_2380_9195# 0.79681f
+C186 a_917_8508# a_1267_9195# 0.62303f
+C187 a_1267_10309# a_2380_10309# 0.63065f
+C188 a_3317_6967# w_787_6793# 0.20624f
+C189 a_1267_9195# a_1839_5853# 0.39656f
+C190 a_4821_9495# a_4821_9283# 0.01085f
+C191 a_3521_5853# a_2907_5853# 0.01245f
+C192 a_1369_5853# a_1003_4745# 0.0153f
+C193 a_4437_10616# a_4437_10404# 0.01085f
+C194 a_1941_7689# a_1839_6967# 0.09918f
+C195 a_2951_11577# VDD 1.54162f
+C196 a_1941_9195# a_1839_9195# 0.21287f
+C197 a_2907_6967# a_2805_6967# 0.20304f
+C198 a_1839_10309# a_2380_10309# 0.20354f
+C199 VDD a_1267_6967# 0.53195f
+C200 VDD a_2840_5276# 0.26614f
+C201 a_1267_9195# a_3009_9195# 0.01987f
+C202 a_1267_5853# a_1003_4745# 4.37307f
+C203 a_2584_5853# a_1755_5366# 0.04263f
+C204 VDD a_3037_11441# 0.25751f
+C205 a_1267_9195# a_1369_8081# 0.01603f
+C206 MEM a_4437_9710# 0.01047f
+C207 VDD a_6276_9217# 2.32549f
+C208 a_2380_5853# a_1267_5853# 0.60641f
+C209 a_2584_6967# a_2805_7689# 0.01463f
+C210 w_783_10756# a_971_11441# 0.06228f
+C211 MEM w_787_8528# 0.02084f
+C212 a_3009_8081# a_2584_8081# 0.04719f
+C213 a_1369_5853# a_1267_6967# 0.01488f
+C214 VDD a_917_6931# 0.68164f
+C215 a_2907_10309# a_2380_10309# 0.20088f
+C216 VDD a_4070_11933# 0.11846f
+C217 a_1755_5366# a_4221_4709# 0.34435f
+C218 VDD a_6770_4732# 28.7688f
+C219 a_1918_11577# a_2004_11577# 0.01534f
+C220 VREF a_1267_10309# 0.01163f
+C221 a_1839_10309# a_1941_10309# 0.1072f
+C222 VDD a_2769_4709# 0.53271f
+C223 VDD a_2584_9195# 0.39655f
+C224 a_1369_9195# a_1267_10309# 0.01956f
+C225 a_1369_10831# a_1267_10309# 0.21767f
+C226 a_1839_8081# a_1941_8603# 0.21415f
+C227 a_2004_11753# a_1918_11577# 0.01534f
+C228 a_3837_11577# a_3037_11753# 0.01566f
+C229 a_3984_11577# a_3837_11577# 0.17314f
+C230 a_4437_8603# a_4437_8815# 0.01085f
+C231 a_1267_6967# a_1267_5853# 0.60236f
+C232 a_1839_10309# VREF 0.18656f
+C233 RST a_1479_4709# 0.01336f
+C234 a_4053_8603# a_4053_8388# 0.01056f
+C235 a_2840_5276# a_3207_4709# 0.12877f
+C236 a_4828_5366# w_889_4565# 0.12275f
+C237 a_1479_4709# a_1692_4709# 0.13829f
+C238 a_1839_8081# a_2907_8081# 0.01582f
+C239 a_1267_8081# a_1839_6967# 0.01066f
+C240 a_2907_6967# a_1267_6967# 0.37474f
+C241 w_787_8528# a_1839_9195# 0.26185f
+C242 a_6362_8126# a_1755_5366# 0.01934f
+C243 a_1267_9195# a_1003_4745# 0.05712f
+C244 a_2584_10309# w_783_10756# 0.08002f
+C245 a_1267_5853# a_917_6931# 0.11624f
+C246 a_1839_6967# w_787_6793# 0.26146f
+C247 VDD COMPB 63.5493f
+C248 a_2907_5853# a_3317_5853# 0.14521f
+C249 a_1839_8081# a_1839_5853# 0.03581f
+C250 a_3317_9195# a_2907_9195# 0.14521f
+C251 a_3521_5853# a_1755_5366# 0.03792f
+C252 a_2805_5853# a_2907_5853# 0.09917f
+C253 a_1941_6967# VDD 0.23387f
+C254 a_4053_9495# a_4053_9710# 0.01056f
+C255 a_3009_5853# a_2584_5853# 0.04719f
+C256 a_3037_11577# a_3037_11753# 0.13024f
+C257 a_4821_6375# a_4821_6587# 0.01085f
+C258 a_917_8508# a_1369_6967# 0.01344f
+C259 a_3521_9195# VDD 0.69038f
+C260 RST a_2840_5276# 0.05759f
+C261 a_971_11753# Vx 0.03143f
+C262 a_4821_7267# a_4821_7055# 0.01085f
+C263 a_2380_6967# w_787_6793# 0.07605f
+C264 a_2907_8081# a_2907_9195# 0.02097f
+C265 MEM a_4437_8603# 0.01063f
+C266 a_1267_8081# w_787_8528# 0.21482f
+C267 a_3317_5853# a_3317_6967# 0.01806f
+C268 a_3521_6967# a_3317_6967# 0.40843f
+C269 a_2538_4709# a_1755_5366# 0.04697f
+C270 a_1941_6375# a_1839_5853# 0.2177f
+C271 RST a_6276_9217# 0.19838f
+C272 a_1839_8081# a_2380_8081# 0.20529f
+C273 a_n553_4696# a_1755_5366# 0.51962f
+C274 a_1267_5853# a_1369_10309# 0.01315f
+C275 a_917_8508# Vx 4.07558f
+C276 a_2907_8081# a_3521_8081# 0.01245f
+C277 a_3009_9917# a_2584_9195# 0.04702f
+C278 a_2584_9195# a_2805_9917# 0.01463f
+C279 VDD a_2004_11577# 0.09027f
+C280 RST a_6770_4732# 0.02487f
+C281 VDD a_2907_5853# 0.09014f
+C282 a_1267_9195# a_917_6931# 0.0289f
+C283 MEM a_4221_4709# 0.01092f
+C284 a_4053_7055# a_4053_7267# 0.01085f
+C285 a_1839_5853# a_1941_10831# 0.01749f
+C286 RST a_2769_4709# 0.3321f
+C287 a_2584_6967# a_1839_6967# 0.20131f
+C288 VDD a_1267_10309# 0.64783f
+C289 a_2805_6375# a_2907_5853# 0.20304f
+C290 a_2584_10309# a_2380_10309# 0.77156f
+C291 a_2805_8081# a_2584_8081# 0.01463f
+C292 MEM w_787_6793# 0.02062f
+C293 a_1267_9195# a_2584_9195# 0.70219f
+C294 a_3009_9195# a_2907_9195# 0.21534f
+C295 a_2004_11753# VDD 0.08208f
+C296 a_2804_11753# a_3037_11753# 0.01498f
+C297 w_783_10756# a_2004_11441# 0.06087f
+C298 VREF a_1839_6967# 0.20506f
+C299 VDD a_1839_10309# 0.48399f
+C300 a_n899_9217# Vx 0.03443f
+C301 a_3009_10831# a_1267_10309# 0.02044f
+C302 a_2897_5460# a_2769_4709# 0.09977f
+C303 a_3317_8081# a_3521_8081# 0.40843f
+C304 a_1839_8081# a_1003_4745# 0.74489f
+C305 a_2584_6967# a_2380_6967# 0.83154f
+C306 VDD a_3317_6967# 0.51093f
+C307 a_3317_10309# a_3317_9195# 0.03047f
+C308 MEM a_6362_8126# 0.01507f
+C309 a_3317_5853# a_1755_5366# 0.02406f
+C310 a_1267_8081# a_1839_9195# 0.03204f
+C311 a_3521_10309# a_3521_9195# 0.02864f
+C312 VDD a_3837_11577# 0.13722f
+C313 a_2907_5853# a_1267_5853# 0.37627f
+C314 a_3317_8081# a_3317_9195# 0.01806f
+C315 MEM a_3521_5853# 0.11551f
+C316 VDD a_2907_10309# 0.12083f
+C317 a_1267_5853# a_1267_10309# 0.33245f
+C318 a_1479_4709# w_889_4565# 0.08332f
+C319 a_885_11577# Vx 0.06845f
+C320 a_1839_10309# a_1941_9917# 0.02347f
+C321 a_4053_9495# a_4053_9283# 0.01085f
+C322 a_2907_5853# a_2907_6967# 0.02097f
+C323 w_889_4565# a_1003_4745# 0.04821f
+C324 VREF w_787_8528# 0.02192f
+C325 a_4053_6160# a_4053_6375# 0.01056f
+C326 a_4821_8603# a_4821_8815# 0.01085f
+C327 a_2907_10309# a_3009_10831# 0.21534f
+C328 a_3317_8081# a_2907_8081# 0.14521f
+C329 a_2907_6967# a_2805_7689# 0.09917f
+C330 VDD a_2004_11933# 0.11603f
+C331 a_4053_5948# a_4053_6160# 0.01085f
+C332 a_971_11577# a_971_11441# 0.29305f
+C333 a_3009_6967# a_1267_6967# 0.01951f
+C334 Vx a_1003_4745# 6.12594f
+C335 a_2584_5853# w_787_6793# 0.08064f
+C336 a_1267_6967# a_1369_6967# 0.22361f
+C337 a_2380_6967# a_3009_7689# 0.01182f
+C338 VDD a_3037_11577# 0.09042f
+C339 a_3009_10309# a_2907_10309# 0.0992f
+C340 a_1267_8081# a_1369_8603# 0.2172f
+C341 VDD a_1755_5366# 0.9873f
+C342 a_1267_8081# w_787_6793# 0.05925f
+C343 a_1839_8081# a_917_6931# 0.46393f
+C344 a_2907_8081# a_2380_8081# 0.19723f
+C345 w_783_10756# a_2380_10309# 0.07599f
+C346 a_2907_6967# a_3317_6967# 0.14521f
+C347 VDD a_1941_9195# 0.23388f
+C348 a_2840_5276# w_889_4565# 0.06724f
+C349 a_885_11577# a_971_11753# 0.02034f
+C350 VDD a_971_11441# 0.2609f
+C351 a_1267_9195# a_1267_10309# 0.16814f
+C352 a_n4986_6715# a_n899_9217# 0.09192f
+C353 a_1839_5853# a_2380_8081# 0.02197f
+C354 a_2380_9195# w_787_8528# 0.07711f
+C355 a_1267_6967# Vx 0.18113f
+C356 a_2130_4709# a_1755_5366# 0.32329f
+C357 VDD a_5078_11441# 0.06765f
+C358 VDD a_1839_6967# 0.46489f
+C359 a_1941_6375# a_917_6931# 0.01325f
+C360 VREF a_1839_9195# 0.17487f
+C361 a_4821_8388# a_4821_8176# 0.01085f
+C362 a_1941_5853# a_1839_6967# 0.01612f
+C363 a_3317_8081# a_2380_8081# 0.0172f
+C364 a_3521_10309# a_2907_10309# 0.01245f
+C365 VDD a_3545_4709# 0.33855f
+C366 a_2769_4709# w_889_4565# 0.0812f
+C367 MEM a_3521_6967# 0.1158f
+C368 a_917_6931# Vx 0.02072f
+C369 VDD a_2804_11753# 0.09973f
+C370 a_4821_10616# a_4821_10404# 0.01085f
+C371 a_3521_5853# w_787_6793# 0.04907f
+C372 a_3207_4709# a_1755_5366# 0.21529f
+C373 w_787_8528# a_2584_8081# 0.08108f
+C374 a_2584_9195# a_2907_9195# 0.33207f
+C375 a_1941_6967# a_1839_8081# 0.01698f
+C376 a_917_8508# a_1003_4745# 0.15027f
+C377 VDD a_2380_6967# 0.45772f
+C378 a_1839_5853# a_1003_4745# 0.24582f
+C379 a_1839_5853# a_2380_5853# 0.21826f
+C380 a_2951_11577# a_4070_11753# 0.02034f
+C381 VDD a_2584_10309# 0.40933f
+C382 a_4437_7482# a_4437_7267# 0.01056f
+C383 a_2584_6967# w_787_6793# 0.08067f
+C384 VDD a_3009_6375# 0.2331f
+C385 VREF a_1267_8081# 0.05541f
+C386 VDD w_787_8528# 1.1136f
+C387 a_1267_5853# a_1839_6967# 0.02944f
+C388 a_2380_9195# a_1839_9195# 0.19537f
+C389 a_1941_8603# a_917_6931# 0.01258f
+C390 VREF w_787_6793# 0.04272f
+C391 a_4821_11043# a_4821_10831# 0.01085f
+C392 a_n899_9217# a_1003_4745# 0.04633f
+C393 a_2907_6967# a_1839_6967# 0.01463f
+C394 RST a_1755_5366# 1.47277f
+C395 MEM VDD 2.9178f
+C396 a_917_8508# a_1267_6967# 0.48204f
+C397 a_1839_5853# a_1267_6967# 0.36249f
+C398 a_3207_4709# a_3545_4709# 0.15107f
+C399 SPIKEB a_n1715_6811# 0.13928f
+C400 a_3009_10309# a_2584_10309# 0.04714f
+C401 a_1755_5366# a_1692_4709# 0.45188f
+C402 a_4070_11753# a_4070_11933# 0.12339f
+C403 a_1267_9195# a_1941_9195# 0.01706f
+C404 a_1941_8081# a_1839_9195# 0.01613f
+C405 a_4437_8176# a_4437_8388# 0.01085f
+C406 a_3521_9195# a_2907_9195# 0.01245f
+C407 a_2805_5853# a_2584_5853# 0.01463f
+C408 a_2897_5460# a_1755_5366# 0.04778f
+C409 a_3009_6375# a_1267_5853# 0.02044f
+C410 a_917_8508# a_917_6931# 0.04203f
+C411 a_1771_11577# a_1918_11577# 0.17736f
+C412 a_1839_5853# a_917_6931# 0.45472f
+C413 VDD a_971_11933# 0.11812f
+C414 MEM a_4437_8388# 0.01047f
+C415 a_2380_6967# a_2907_6967# 0.19723f
+C416 a_1267_5853# w_787_8528# 0.01615f
+C417 a_3009_8081# a_2907_8081# 0.09917f
+C418 a_3521_9195# a_3521_8081# 0.03719f
+C419 a_2584_9195# a_1839_5853# 0.02017f
+C420 a_5078_11753# a_5078_11933# 0.02961f
+C421 VDD a_1839_9195# 0.47852f
+C422 RST a_3545_4709# 0.09932f
+C423 a_3317_5853# w_787_6793# 0.20624f
+C424 a_3521_6967# w_787_6793# 0.04907f
+C425 VDD a_2004_11441# 0.25743f
+C426 a_3521_9195# a_3317_9195# 0.40843f
+C427 a_2951_11577# a_885_11577# 0.10138f
+C428 a_4821_7694# a_4821_7482# 0.01085f
+C429 VDD w_783_10756# 0.76471f
+C430 a_4437_9495# a_4437_9710# 0.01056f
+C431 a_1267_8081# a_2584_8081# 0.71451f
+C432 a_4821_6375# a_4821_6160# 0.01056f
+C433 a_1267_10309# Vx 0.21105f
+C434 a_2380_9195# a_2380_10309# 0.03435f
+C435 a_5078_11441# a_5078_11577# 0.07033f
+C436 a_1941_10831# a_1267_10309# 0.01376f
+C437 VDD a_2584_5853# 0.40083f
+C438 VREF a_n553_4696# 0.02954f
+C439 a_3984_11577# a_4070_11577# 0.01578f
+C440 a_1941_9917# a_1839_9195# 0.09921f
+C441 a_3883_4709# a_1755_5366# 0.19742f
+C442 a_2805_6375# a_2584_5853# 0.04511f
+C443 a_2907_10309# a_2805_10831# 0.20304f
+C444 MEM a_3521_10309# 0.11582f
+C445 a_1267_9195# w_787_8528# 0.30554f
+C446 MEM a_4437_9495# 0.01063f
+C447 VDD a_1267_8081# 0.51645f
+C448 a_3521_5853# a_3317_5853# 0.40843f
+C449 a_1267_6967# a_1003_4745# 0.06917f
+C450 a_3521_5853# a_3521_6967# 0.03719f
+C451 a_2584_6967# a_3009_7689# 0.04719f
+C452 a_1839_10309# a_1941_10831# 0.20989f
+C453 VDD a_4221_4709# 0.34379f
+C454 a_3009_8081# a_2380_8081# 0.01182f
+C455 a_1771_11577# a_971_11577# 0.01602f
+C456 a_n553_4696# a_n1715_6811# 0.01957f
+C457 SPIKEB VDD 63.5493f
+C458 VDD a_1369_8603# 0.23413f
+C459 a_4437_8388# a_4437_8603# 0.01056f
+C460 VDD w_787_6793# 1.04241f
+C461 MEM RST 0.46658f
+C462 a_1267_10309# a_2805_10309# 0.01675f
+C463 a_2907_10309# a_2907_9195# 0.01112f
+C464 w_783_10756# a_1267_5853# 0.0676f
+C465 a_1369_7689# a_1267_6967# 0.09918f
+C466 a_917_6931# a_1003_4745# 0.08886f
+C467 a_n553_4696# a_1071_4709# 0.12903f
+C468 a_1267_8081# a_3009_8603# 0.02006f
+C469 a_2584_5853# a_1267_5853# 0.73923f
+C470 VDD a_1771_11577# 0.13616f
+C471 a_3883_4709# a_3545_4709# 0.15149f
+C472 a_4437_7482# MEM 0.01052f
+C473 a_4053_8603# a_4053_8815# 0.01085f
+C474 VDD a_2380_10309# 0.46204f
+C475 VDD a_6362_8126# 7.02871f
+C476 a_2907_5853# a_1839_5853# 0.01788f
+C477 a_2584_6967# a_2584_8081# 0.07395f
+C478 a_1839_8081# a_1839_6967# 0.24755f
+C479 a_1267_8081# a_1267_5853# 0.16116f
+C480 w_889_4565# a_1755_5366# 0.31617f
+C481 a_917_8508# a_1267_10309# 0.39966f
+C482 a_1839_5853# a_1267_10309# 0.09012f
+C483 a_3521_5853# VDD 0.69301f
+C484 a_4053_9922# a_4053_9710# 0.01085f
+C485 a_1267_9195# a_1369_9917# 0.09919f
+C486 a_3521_10309# w_783_10756# 0.04464f
+C487 VDD a_5078_11933# 0.03315f
+C488 a_1267_10309# a_3317_10309# 0.01121f
+C489 a_2805_8081# a_2907_8081# 0.09917f
+C490 VDD a_2805_9195# 0.2331f
+C491 a_1267_5853# w_787_6793# 0.24931f
+C492 a_1267_9195# a_1839_9195# 0.57006f
+C493 a_1267_6967# a_917_6931# 0.14548f
+C494 a_3037_11933# a_3037_11753# 0.12339f
+C495 a_2907_10309# a_2805_10309# 0.09917f
+C496 a_3984_11577# VDD 0.1367f
+C497 VDD a_3037_11753# 0.08238f
+C498 a_917_8508# a_1839_10309# 0.03192f
+C499 a_1839_10309# a_1839_5853# 0.24855f
+C500 a_2840_5276# a_2769_4709# 0.51778f
+C501 VDD a_2584_6967# 0.39659f
+C502 a_2907_6967# w_787_6793# 0.0977f
+C503 a_3009_10309# a_2380_10309# 0.01182f
+C504 a_538_11753# a_538_11933# 0.02961f
+C505 a_1941_6375# a_1839_6967# 0.02756f
+C506 a_4828_5366# a_1755_5366# 0.39015f
+C507 a_6276_9217# a_6770_4732# 0.09192f
+C508 VDD a_2538_4709# 0.40128f
+C509 a_5078_11753# VDD 0.03306f
+C510 VDD VREF 0.179f
+C511 VDD a_1369_9195# 0.23451f
+C512 VDD a_n553_4696# 1.09886f
+C513 a_3545_4709# w_889_4565# 0.20607f
+C514 a_1839_8081# w_787_8528# 0.1964f
+C515 a_4053_7482# a_4053_7694# 0.01085f
+C516 VDD a_1918_11577# 0.13874f
+C517 VDD a_1369_10831# 0.2374f
+C518 VDD a_1369_6375# 0.23414f
+C519 a_3317_8081# a_3317_6967# 0.03047f
+C520 RST a_4221_4709# 0.10072f
+C521 a_1267_9195# a_1267_8081# 0.47286f
+C522 a_885_11577# a_2004_11577# 0.05294f
+C523 a_2584_10309# a_2805_10831# 0.04511f
+C524 a_2907_10309# a_3317_10309# 0.14521f
+C525 VDD a_538_11753# 0.02994f
+C526 VDD a_n1715_6811# 7.02862f
+C527 a_4437_10831# a_4437_11043# 0.01085f
+C528 a_2538_4709# a_2130_4709# 0.13318f
+C529 a_1267_9195# a_1369_8603# 0.03168f
+C530 a_2004_11753# a_885_11577# 0.02034f
+C531 VDD a_4070_11577# 0.09241f
+C532 a_2130_4709# a_n553_4696# 0.26706f
+C533 a_1941_6967# a_1267_6967# 0.01432f
+C534 a_4437_10616# a_4437_10831# 0.01056f
+C535 a_4437_6375# a_4437_6160# 0.01056f
+C536 VDD a_1071_4709# 0.53356f
+C537 a_1839_8081# a_1941_7689# 0.02364f
+C538 VDD a_2380_9195# 0.45773f
+C539 a_2907_5853# a_2380_5853# 0.19738f
+C540 a_2584_6967# a_2907_6967# 0.34325f
+C541 VREF a_1267_5853# 0.07698f
+C542 a_1267_10309# a_1003_4745# 0.11201f
+C543 RST a_6362_8126# 0.03809f
+C544 w_787_8528# a_2907_9195# 0.09851f
+C545 COMPB a_6770_4732# 15.6197f
+C546 VDD a_3317_5853# 0.51432f
+C547 w_787_8528# Vx 0.05618f
+C548 VDD a_3521_6967# 0.69038f
+C549 a_1941_6967# a_917_6931# 0.0153f
+C550 a_1369_10831# a_1267_5853# 0.01681f
+C551 a_1369_6375# a_1267_5853# 0.21646f
+C552 MEM w_889_4565# 0.11605f
+C553 a_1839_10309# a_1003_4745# 0.81032f
+C554 a_1839_8081# a_1839_9195# 0.29002f
+C555 w_787_8528# a_3521_8081# 0.04911f
+C556 VDD a_971_11577# 0.0921f
+C557 VDD a_538_11933# 0.02978f
+C558 VDD a_2584_8081# 0.39659f
+C559 a_1839_5853# a_1839_6967# 0.61597f
+C560 a_2584_10309# a_2805_10309# 0.01463f
+C561 w_787_8528# a_3317_9195# 0.20855f
+C562 MEM a_3521_8081# 0.11582f
+C563 a_4053_10616# a_4053_10831# 0.01056f
+C564 a_1267_6967# a_2805_7689# 0.01675f
+C565 a_4821_10616# a_4821_10831# 0.01056f
+C566 a_3883_4709# a_4221_4709# 0.15167f
+C567 MEM a_4828_5366# 0.51572f
+C568 RST a_2538_4709# 0.024f
+C569 a_2907_6967# a_3009_7689# 0.09917f
+C570 VDD a_3037_11933# 0.11627f
+C571 a_3317_5853# a_1267_5853# 0.01123f
+C572 RST a_n553_4696# 0.04272f
+C573 a_1267_9195# VREF 0.03065f
+C574 a_2805_5853# a_1267_5853# 0.017f
+C575 a_1267_9195# a_1369_9195# 0.22323f
+C576 a_1839_8081# a_1267_8081# 0.8335f
+C577 a_1267_10309# a_917_6931# 0.0112f
+C578 a_2951_11577# a_3837_11577# 0.02617f
+C579 a_2907_8081# w_787_8528# 0.09792f
+C580 a_n553_4696# a_1692_4709# 0.24677f
+C581 a_1267_6967# a_3317_6967# 0.01031f
+C582 a_2380_6967# a_1839_5853# 0.02132f
+C583 a_1839_9195# a_2907_9195# 0.01489f
+C584 VDD a_2805_6375# 0.2331f
+C585 a_2907_6967# a_3521_6967# 0.01245f
+C586 a_2584_10309# a_1839_5853# 0.01748f
+C587 a_1479_4709# a_1755_5366# 0.03361f
+C588 a_1839_8081# w_787_6793# 0.05913f
+C589 a_1267_8081# a_1369_6967# 0.01878f
+C590 VDD a_3009_10831# 0.23713f
+C591 a_1839_10309# a_917_6931# 0.50569f
+C592 a_917_8508# w_787_8528# 0.30642f
+C593 a_4437_6587# a_4437_6375# 0.01085f
+C594 MEM a_4070_11753# 0.02438f
+C595 a_1839_5853# w_787_8528# 0.01687f
+C596 w_783_10756# Vx 0.03586f
+C597 VDD a_2130_4709# 0.51683f
+C598 VDD a_3009_8603# 0.2331f
+C599 a_3009_9917# a_2380_9195# 0.01182f
+C600 a_5078_11753# a_5078_11577# 0.03126f
+C601 a_2380_5853# a_1755_5366# 0.02344f
+C602 a_2805_8603# a_2584_8081# 0.04511f
+C603 a_4053_6587# a_4053_6375# 0.01085f
+C604 a_4053_7482# a_4053_7267# 0.01056f
+C605 w_889_4565# a_4221_4709# 0.20709f
+C606 a_3317_8081# w_787_8528# 0.20753f
+C607 a_1267_9195# a_2380_9195# 0.63385f
+C608 a_971_11753# a_971_11933# 0.12339f
+C609 VDD a_1267_5853# 0.6548f
+C610 a_2380_6967# a_2380_8081# 0.03435f
+C611 a_2951_11577# a_3037_11577# 0.05268f
+C612 a_1941_8603# a_1839_9195# 0.02669f
+C613 a_4821_9710# a_4821_9922# 0.01085f
+C614 a_1267_8081# Vx 0.19944f
+C615 a_1369_10309# a_1267_10309# 0.10698f
+C616 a_2804_11753# a_885_11577# 0.0384f
+C617 VDD a_3207_4709# 0.33474f
+C618 VDD a_2805_8603# 0.2331f
+C619 a_1839_6967# a_1003_4745# 1.03908f
+C620 VDD a_2907_6967# 0.08851f
+C621 a_4821_8388# a_4821_8603# 0.01056f
+C622 w_787_6793# Vx 0.02796f
+C623 w_787_8528# a_2380_8081# 0.07647f
+C624 a_2840_5276# a_1755_5366# 0.40301f
+C625 VDD a_538_11441# 0.06326f
+C626 a_1369_5853# a_1267_5853# 0.09917f
+C627 a_3037_11577# a_3037_11441# 0.29305f
+C628 a_4070_11441# w_783_10756# 0.02488f
+C629 a_6276_9217# a_1755_5366# 0.24922f
+C630 a_3521_10309# VDD 0.75559f
+C631 a_1839_5853# a_1839_9195# 0.03485f
+C632 a_1941_8603# a_1267_8081# 0.01308f
+C633 a_1839_8081# VREF 0.21432f
+C634 a_1941_9195# a_917_6931# 0.01275f
+C635 a_1267_6967# a_1839_6967# 0.86515f
+C636 a_2769_4709# a_1755_5366# 0.14507f
+C637 RST VDD 0.76077f
+C638 a_917_8508# w_783_10756# 0.08111f
+C639 a_1839_5853# w_783_10756# 0.05897f
+C640 VDD a_1267_9195# 0.63676f
+C641 a_3009_5853# a_2380_5853# 0.01182f
+C642 a_2951_11577# a_2804_11753# 0.03813f
+C643 VDD a_1692_4709# 0.08387f
+C644 w_783_10756# a_3317_10309# 0.20416f
+C645 w_787_8528# a_1003_4745# 0.0241f
+C646 a_2805_9195# a_2907_9195# 0.20304f
+C647 a_2907_8081# a_1267_8081# 0.37587f
+C648 a_2004_11753# a_2004_11577# 0.13024f
+C649 a_2584_5853# a_1839_5853# 0.20652f
+C650 a_1839_6967# a_917_6931# 0.68693f
+C651 a_2538_4709# w_889_4565# 0.08631f
+C652 a_917_8508# a_1267_8081# 0.52305f
+C653 RST a_2130_4709# 0.16603f
+C654 a_1839_5853# a_1267_8081# 0.25436f
+C655 a_2380_6967# a_1267_6967# 0.624f
+C656 a_n553_4696# w_889_4565# 0.02941f
+C657 a_1839_10309# a_1267_10309# 0.91449f
+C658 a_2130_4709# a_1692_4709# 0.0123f
+C659 a_917_8508# a_1369_8603# 0.01479f
+C660 a_4053_10404# a_4053_10616# 0.01085f
+C661 a_917_8508# w_787_6793# 0.18154f
+C662 VDD a_5078_11577# 0.03912f
+C663 a_1771_11577# a_971_11753# 0.01602f
+C664 a_1839_5853# w_787_6793# 0.22443f
+C665 VREF Vx 0.1349f
+C666 SPIKEB a_n4986_6715# 15.6197f
+C667 RST VSS 2.40741f
+C668 COMPB VSS 41.3924f
+C669 VREF VSS 11.837f
+C670 SPIKEB VSS 41.3924f
+C671 MEM VSS 6.88762f
+C672 Vx VSS 2.40733f
+C673 VDD VSS 96.9734f
+C674 a_1820_4745# VSS 0.01179f
+C675 a_2897_5460# VSS 0.1384f
+C676 a_4828_5366# VSS 0.70564f
+C677 a_4221_4709# VSS 0.59878f
+C678 a_3883_4709# VSS 0.59637f
+C679 a_3545_4709# VSS 0.59059f
+C680 a_3207_4709# VSS 0.59112f
+C681 a_2840_5276# VSS 0.27645f
+C682 a_2769_4709# VSS 0.23855f
+C683 a_2538_4709# VSS 0.49226f
+C684 a_2130_4709# VSS 0.72126f
+C685 a_1692_4709# VSS 0.46728f
+C686 a_1479_4709# VSS 0.49765f
+C687 a_1071_4709# VSS 0.77254f
+C688 a_4821_5948# VSS 0.07639f $ **FLOATING
+C689 a_4437_5948# VSS 0.07739f $ **FLOATING
+C690 a_4053_5948# VSS 0.0782f $ **FLOATING
+C691 a_3009_5853# VSS 0.13943f
+C692 a_2805_5853# VSS 0.14073f
+C693 a_1941_5853# VSS 0.14052f
+C694 a_1369_5853# VSS 0.14052f
+C695 a_4821_6160# VSS 0.06343f $ **FLOATING
+C696 a_4437_6160# VSS 0.04527f $ **FLOATING
+C697 a_4053_6160# VSS 0.06338f $ **FLOATING
+C698 a_4821_6375# VSS 0.06278f $ **FLOATING
+C699 a_4437_6375# VSS 0.04474f $ **FLOATING
+C700 a_4053_6375# VSS 0.06273f $ **FLOATING
+C701 a_4821_6587# VSS 0.06685f $ **FLOATING
+C702 a_4437_6587# VSS 0.06628f $ **FLOATING
+C703 a_4053_6587# VSS 0.0668f $ **FLOATING
+C704 a_3521_5853# VSS 1.13831f
+C705 a_3009_6375# VSS 0.01319f
+C706 a_2805_6375# VSS 0.01211f
+C707 a_1941_6375# VSS 0.01249f
+C708 a_1369_6375# VSS 0.01243f
+C709 a_3317_5853# VSS 0.76956f
+C710 a_2907_5853# VSS 0.31782f
+C711 a_2380_5853# VSS 0.56243f
+C712 a_2584_5853# VSS 0.50865f
+C713 a_4821_7055# VSS 0.06686f $ **FLOATING
+C714 a_4437_7055# VSS 0.06628f $ **FLOATING
+C715 a_4053_7055# VSS 0.0668f $ **FLOATING
+C716 a_4821_7267# VSS 0.06278f $ **FLOATING
+C717 a_4437_7267# VSS 0.04474f $ **FLOATING
+C718 a_4053_7267# VSS 0.06273f $ **FLOATING
+C719 a_3009_6967# VSS 0.01319f
+C720 a_2805_6967# VSS 0.01211f
+C721 a_1941_6967# VSS 0.0125f
+C722 a_1369_6967# VSS 0.01246f
+C723 a_4821_7482# VSS 0.06343f $ **FLOATING
+C724 a_4437_7482# VSS 0.04527f $ **FLOATING
+C725 a_4053_7482# VSS 0.06338f $ **FLOATING
+C726 a_4821_7694# VSS 0.07526f $ **FLOATING
+C727 a_4437_7694# VSS 0.07417f $ **FLOATING
+C728 a_4053_7694# VSS 0.0752f $ **FLOATING
+C729 a_1755_5366# VSS 2.55196f
+C730 a_3521_6967# VSS 1.14858f
+C731 a_3009_7689# VSS 0.13943f
+C732 a_2805_7689# VSS 0.14073f
+C733 a_1941_7689# VSS 0.14052f
+C734 a_1369_7689# VSS 0.14052f
+C735 a_3317_6967# VSS 0.76704f
+C736 a_2907_6967# VSS 0.323f
+C737 a_2380_6967# VSS 0.55401f
+C738 a_2584_6967# VSS 0.49651f
+C739 a_1267_6967# VSS 0.88816f
+C740 a_1839_6967# VSS 0.82653f
+C741 a_n553_4696# VSS 2.12924f
+C742 a_4821_8176# VSS 0.07526f $ **FLOATING
+C743 a_4437_8176# VSS 0.07417f $ **FLOATING
+C744 a_4053_8176# VSS 0.0752f $ **FLOATING
+C745 a_3009_8081# VSS 0.13943f
+C746 a_2805_8081# VSS 0.14073f
+C747 a_1941_8081# VSS 0.14052f
+C748 a_1369_8081# VSS 0.14052f
+C749 a_4821_8388# VSS 0.06343f $ **FLOATING
+C750 a_4437_8388# VSS 0.04527f $ **FLOATING
+C751 a_4053_8388# VSS 0.06338f $ **FLOATING
+C752 a_4821_8603# VSS 0.06278f $ **FLOATING
+C753 a_4437_8603# VSS 0.04474f $ **FLOATING
+C754 a_4053_8603# VSS 0.06273f $ **FLOATING
+C755 a_4821_8815# VSS 0.06685f $ **FLOATING
+C756 a_4437_8815# VSS 0.06628f $ **FLOATING
+C757 a_4053_8815# VSS 0.0668f $ **FLOATING
+C758 a_3521_8081# VSS 1.14854f
+C759 a_3009_8603# VSS 0.01319f
+C760 a_2805_8603# VSS 0.01211f
+C761 a_1941_8603# VSS 0.01249f
+C762 a_1369_8603# VSS 0.01235f
+C763 a_3317_8081# VSS 0.76575f
+C764 a_2907_8081# VSS 0.32202f
+C765 a_2380_8081# VSS 0.55346f
+C766 a_2584_8081# VSS 0.49598f
+C767 a_1267_8081# VSS 0.8752f
+C768 a_1839_8081# VSS 0.82488f
+C769 a_4821_9283# VSS 0.06685f $ **FLOATING
+C770 a_4437_9283# VSS 0.06628f $ **FLOATING
+C771 a_4053_9283# VSS 0.0668f $ **FLOATING
+C772 a_4821_9495# VSS 0.06278f $ **FLOATING
+C773 a_4437_9495# VSS 0.04474f $ **FLOATING
+C774 a_4053_9495# VSS 0.06273f $ **FLOATING
+C775 a_3009_9195# VSS 0.01317f
+C776 a_2805_9195# VSS 0.01209f
+C777 a_1941_9195# VSS 0.0125f
+C778 a_1369_9195# VSS 0.0125f
+C779 a_4821_9710# VSS 0.06383f $ **FLOATING
+C780 a_4437_9710# VSS 0.04568f $ **FLOATING
+C781 a_4053_9710# VSS 0.06378f $ **FLOATING
+C782 a_4821_9922# VSS 0.07571f $ **FLOATING
+C783 a_4437_9922# VSS 0.07463f $ **FLOATING
+C784 a_4053_9922# VSS 0.07566f $ **FLOATING
+C785 a_3521_9195# VSS 1.15091f
+C786 a_3009_9917# VSS 0.13984f
+C787 a_2805_9917# VSS 0.14117f
+C788 a_1941_9917# VSS 0.141f
+C789 a_1369_9917# VSS 0.141f
+C790 a_3317_9195# VSS 0.76802f
+C791 a_2907_9195# VSS 0.3249f
+C792 a_2380_9195# VSS 0.55737f
+C793 a_2584_9195# VSS 0.49818f
+C794 a_1267_9195# VSS 0.91511f
+C795 a_1839_9195# VSS 0.81914f
+C796 a_4821_10404# VSS 0.07586f $ **FLOATING
+C797 a_4437_10404# VSS 0.07477f $ **FLOATING
+C798 a_4053_10404# VSS 0.07581f $ **FLOATING
+C799 a_3009_10309# VSS 0.13994f
+C800 a_2805_10309# VSS 0.14128f
+C801 a_1941_10309# VSS 0.14145f
+C802 a_1369_10309# VSS 0.14145f
+C803 a_4821_10616# VSS 0.06409f $ **FLOATING
+C804 a_4437_10616# VSS 0.04594f $ **FLOATING
+C805 a_4053_10616# VSS 0.06404f $ **FLOATING
+C806 a_1003_4745# VSS 3.03383f
+C807 a_4821_10831# VSS 0.0635f $ **FLOATING
+C808 a_4437_10831# VSS 0.04545f $ **FLOATING
+C809 a_4053_10831# VSS 0.06345f $ **FLOATING
+C810 a_4821_11043# VSS 0.06668f $ **FLOATING
+C811 a_4437_11043# VSS 0.06611f $ **FLOATING
+C812 a_4053_11043# VSS 0.06663f $ **FLOATING
+C813 a_3521_10309# VSS 1.15218f
+C814 a_3009_10831# VSS 0.01536f
+C815 a_2805_10831# VSS 0.01451f
+C816 a_1941_10831# VSS 0.01445f
+C817 a_1369_10831# VSS 0.01468f
+C818 a_6770_4732# VSS 20.4572f
+C819 a_6362_8126# VSS 5.79962f
+C820 a_6276_9217# VSS 2.21575f
+C821 a_3317_10309# VSS 0.77721f
+C822 a_2907_10309# VSS 0.33455f
+C823 a_2380_10309# VSS 0.56632f
+C824 a_2584_10309# VSS 0.50819f
+C825 a_1267_10309# VSS 0.98324f
+C826 a_1839_10309# VSS 0.8754f
+C827 a_917_6931# VSS 0.74981f
+C828 a_1839_5853# VSS 1.10038f
+C829 a_917_8508# VSS 0.65576f
+C830 a_1267_5853# VSS 0.99211f
+C831 a_n899_9217# VSS 2.31437f
+C832 a_n1715_6811# VSS 5.8005f
+C833 a_n4986_6715# VSS 20.4573f
+C834 a_5078_11441# VSS 0.09091f $ **FLOATING
+C835 a_4070_11441# VSS 0.35512f $ **FLOATING
+C836 a_3037_11441# VSS 0.31923f $ **FLOATING
+C837 a_2004_11441# VSS 0.32183f $ **FLOATING
+C838 a_971_11441# VSS 0.32203f $ **FLOATING
+C839 a_538_11441# VSS 0.09386f $ **FLOATING
+C840 a_5078_11577# VSS 0.0666f $ **FLOATING
+C841 a_4070_11577# VSS 0.27998f $ **FLOATING
+C842 a_3037_11577# VSS 0.27998f $ **FLOATING
+C843 a_2951_11577# VSS 0.1799f
+C844 a_2004_11577# VSS 0.27998f $ **FLOATING
+C845 a_971_11577# VSS 0.27998f $ **FLOATING
+C846 a_885_11577# VSS 0.18478f
+C847 a_538_11577# VSS 0.06669f $ **FLOATING
+C848 a_5078_11753# VSS 0.07486f $ **FLOATING
+C849 a_4070_11753# VSS 0.31624f $ **FLOATING
+C850 a_3984_11577# VSS 0.10149f
+C851 a_3837_11577# VSS 0.10136f
+C852 a_3037_11753# VSS 0.31624f $ **FLOATING
+C853 a_2804_11753# VSS 0.11471f
+C854 a_2004_11753# VSS 0.31624f $ **FLOATING
+C855 a_1918_11577# VSS 0.10096f
+C856 a_1771_11577# VSS 0.10223f
+C857 a_971_11753# VSS 0.31624f $ **FLOATING
+C858 a_538_11753# VSS 0.07475f $ **FLOATING
+C859 a_5078_11933# VSS 0.10218f $ **FLOATING
+C860 a_4070_11933# VSS 0.42551f $ **FLOATING
+C861 a_3037_11933# VSS 0.42551f $ **FLOATING
+C862 a_2004_11933# VSS 0.42551f $ **FLOATING
+C863 a_971_11933# VSS 0.42551f $ **FLOATING
+C864 a_538_11933# VSS 0.10153f $ **FLOATING
+C865 w_889_4565# VSS 0.02877f
+C866 w_787_6793# VSS 0.14495f
+C867 w_787_8528# VSS 0.14459f
+C868 w_783_10756# VSS 0.12037f
+.ends
+

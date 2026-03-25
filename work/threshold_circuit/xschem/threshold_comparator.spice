@@ -1,8 +1,0 @@
-** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/threshold_circuit/xschem/threshold_comparator.sch
-.subckt threshold_comparator VDD Vin Vout VSS
-*.PININFO VDD:B VSS:B Vin:I Vout:O
-M2 Vx Vin VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=2
-M1 Vx Vin VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=2
-M3 Vout Vx VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=2
-M4 Vout Vx VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1 m=2
-.ends

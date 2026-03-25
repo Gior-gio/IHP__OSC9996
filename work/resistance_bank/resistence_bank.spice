@@ -1,9 +1,0 @@
-** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bench/resistence_bench.sch
-.subckt resistence_bank VDD MEM Vx
-*.PININFO VDD:B Vx:B MEM:B
-RFB Vx net3 rhigh w=0.5e-6 l=4e-6 m=1 b=1
-RFB4 VDD VDD rhigh w=0.5e-6 l=4e-6 m=8 b=0
-RFB1 net3 net2 rhigh w=0.5e-6 l=4e-6 m=1 b=1
-RFB2 net2 net1 rhigh w=0.5e-6 l=4e-6 m=1 b=1
-RFB3 net1 MEM rhigh w=0.5e-6 l=4e-6 m=1 b=1
-.ends
