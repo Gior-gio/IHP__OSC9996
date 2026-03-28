@@ -46,9 +46,9 @@ N 540 -340 740 -340 {lab=SPIKE2}
 C {opin.sym} 1060 -780 2 1 {name=p3 lab=SPIKEB1}
 C {opin.sym} 1060 -980 0 0 {name=p10 lab=COMPB1
 }
-C {ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 900 -780 2 1 {name=xSPKB1}
+C {gate_buff_pad.sym} 900 -780 2 1 {name=xSPKB1}
 C {lab_wire.sym} 900 -690 3 0 {name=p14 sig_type=std_logic lab=VDD}
-C {ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 900 -980 0 0 {name=xCOMPB1}
+C {gate_buff_pad.sym} 900 -980 0 0 {name=xCOMPB1}
 C {lab_wire.sym} 900 -1070 3 1 {name=p17 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 900 -890 3 0 {name=p18 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 460 -750 3 1 {name=p5 sig_type=std_logic lab=VSS}
@@ -67,9 +67,9 @@ C {noconn.sym} 600 -420 2 0 {name=l1}
 C {opin.sym} 1060 -260 2 1 {name=p15 lab=SPIKEB2}
 C {opin.sym} 1060 -460 0 0 {name=p25 lab=COMPB2
 }
-C {ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 900 -260 2 1 {name=xSPKB2}
+C {gate_buff_pad.sym} 900 -260 2 1 {name=xSPKB2}
 C {lab_wire.sym} 900 -170 3 0 {name=p26 sig_type=std_logic lab=VDD}
-C {ihp-sg13g2/gate_buff_pad/xschem/gate_buff_pad.sym} 900 -460 0 0 {name=xCOMPB2}
+C {gate_buff_pad.sym} 900 -460 0 0 {name=xCOMPB2}
 C {lab_wire.sym} 900 -550 3 1 {name=p28 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 900 -370 3 0 {name=p29 sig_type=std_logic lab=VSS}
 C {iopin.sym} 170 -1170 0 1 {name=p16 lab=VDD}
@@ -79,5 +79,5 @@ C {ipin.sym} 290 -740 3 0 {name=p30 lab=Vref1}
 C {ipin.sym} 120 -420 0 0 {name=p31 lab=Vx2}
 C {ipin.sym} 290 -220 3 0 {name=p32 lab=Vref2}
 C {ipin.sym} 120 -860 0 0 {name=p33 lab=RST}
-C {ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 50 -670 0 0 {name=xLIF1}
-C {ihp-sg13g2/LIF_neuron/xschem/LIF_neuron.sym} 50 -150 0 0 {name=xLIF2}
+C {LIF_neuron.sym} 50 -670 0 0 {name=xLIF1}
+C {LIF_neuron.sym} 50 -150 0 0 {name=xLIF2}

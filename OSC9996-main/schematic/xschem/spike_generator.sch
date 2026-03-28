@@ -59,7 +59,7 @@ C {lab_wire.sym} 800 -260 2 0 {name=p23 sig_type=std_logic lab=VDD
 C {lab_wire.sym} 800 -90 2 0 {name=p24 sig_type=std_logic lab=VSS
 
 }
-C {OSC9996-main/schematic/xschem/edge_detector.sym} 540 -440 0 0 {name=xEDGE}
-C {OSC9996-main/schematic/xschem/gate_buff_L0d13.sym} 540 -260 0 0 {name=xBSPK}
-C {OSC9996-main/schematic/xschem/gate_buff_L0d13.sym} 540 10 0 0 {name=xBRST}
-C {OSC9996-main/schematic/xschem/gate_or.sym} 580 -170 0 0 {name=xOR}
+C {edge_detector.sym} 540 -440 0 0 {name=xEDGE}
+C {gate_buff_L0d13.sym} 540 -260 0 0 {name=xBSPK}
+C {gate_buff_L0d13.sym} 540 10 0 0 {name=xBRST}
+C {gate_or.sym} 580 -170 0 0 {name=xOR}
