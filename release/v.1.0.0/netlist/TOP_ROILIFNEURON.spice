@@ -34,7 +34,7 @@ MP4 VOUT Z VDD VDD sg13_lv_pmos w=9.6u l=0.13u ng=1 m=64
 *.PININFO VDD:B VSS:B MEM:O Vx:I Vref:I SPIKE:O RST:I COMP:O
 xINT Vref VSS VDD INT_RST Vx MEM integrator
 xSPK VDD COMP SPIKE INT_RST RST VSS spike_generator
-xRES VDD MEM Vx resistence_bank
+xRES VDD MEM Vx VSS resistence_bank
 xCOMP VDD MEM COMP VSS threshold_comparator
 .ends
 
@@ -81,32 +81,32 @@ xOR Ven VDD VSS net1 Vcmp gate_or
 * expanding   symbol:  /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bank/resistence_bank.sym # of pins=3
 ** sym_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bank/resistence_bank.sym
 ** sch_path: /foss/designs/chipathon_2025/designs/ihp-sg13g2/resistance_bank/resistence_bank.sch
-.subckt resistence_bank VDD MEM Vx
+.subckt resistence_bank VDD MEM Vx VSS
 *.PININFO VDD:B Vx:B MEM:B
-RFB0 Vx net4 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB1 net4 net3 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB2 net3 net2 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB3 net2 net1 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[7] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[6] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[5] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[4] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[3] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[2] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[1] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY1[0] VDD VDD rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB6 net1 net5 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB7 net5 net6 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB8 net6 net7 rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RFB9 net7 MEM rhigh w=0.5e-6 l=4e-6 m=1 b=0
-RDMY2[7] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[6] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[5] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[4] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[3] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[2] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[1] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
-RDMY2[0] VDD VDD rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RFB0 Vx net4 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB1 net4 net3 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB2 net3 net2 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB3 net2 net1 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[7] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[6] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[5] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[4] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[3] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[2] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[1] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY1[0] VDD VDD VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB6 net1 net5 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB7 net5 net6 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB8 net6 net7 VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RFB9 net7 MEM VSS rhigh w=0.5e-6 l=4e-6 m=1 b=0
+RDMY2[7] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[6] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[5] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[4] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[3] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[2] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[1] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
+RDMY2[0] VDD VDD VSS rhigh w=0.5e-6 l=0.96e-6 m=1 b=0
 .ends
 
 
@@ -146,18 +146,18 @@ M6 B RST VSS VSS sg13_lv_nmos w=1.0u l=0.13u ng=1
 *.PININFO A:I B:I VSS:I VDD:I VOUT:O
 x1 VDD XOR B A VSS gate_xor
 x2 VDD XOR BUF VSS gate_buff_L0d13
-RXOR[1] BUF VOUT rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RXOR[0] BUF VOUT rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[9] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[8] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[7] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[6] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[5] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[4] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[3] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[2] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[1] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
-RDMY[0] VSS VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RXOR[1] BUF VOUT VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RXOR[0] BUF VOUT VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[9] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[8] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[7] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[6] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[5] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[4] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[3] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[2] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[1] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+RDMY[0] VDD VDD VSS rppd w=0.5e-6 l=0.5e-6 m=1 b=0
 .ends
 
 

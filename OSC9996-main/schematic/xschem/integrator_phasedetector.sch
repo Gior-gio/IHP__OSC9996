@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 820 -410 930 -410 {lab=BUF}
 N 540 -410 620 -410 {lab=XOR}
@@ -14,10 +13,10 @@ N 700 -540 700 -480 {lab=VDD}
 N 240 -380 300 -380 {lab=B}
 N 240 -440 300 -440 {lab=A}
 N 990 -410 1040 -410 {lab=VOUT}
-N 920 -250 950 -250 {lab=VSS}
-N 920 -250 920 -220 {lab=VSS}
-N 1010 -250 1030 -250 {lab=VSS}
-N 1030 -250 1030 -230 {lab=VSS}
+N 920 -250 950 -250 {lab=VDD}
+N 920 -250 920 -220 {lab=VDD}
+N 1010 -250 1030 -250 {lab=VDD}
+N 1030 -250 1030 -220 {lab=VDD}
 C {title.sym} 160 -40 0 0 {name=l1 author="Juan pablo luengas -- Nicolas Velasco"}
 C {gate_xor.sym} 250 -220 0 0 {name=x1}
 C {gate_buff_L0d13.sym} 440 -230 0 0 {name=x2}
@@ -46,7 +45,7 @@ spiceprefix=X
 b=0
 m=1
 }
-C {lab_wire.sym} 920 -220 2 1 {name=p8 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1030 -230 2 1 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 920 -220 2 1 {name=p8 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1030 -220 2 1 {name=p9 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 590 -410 0 0 {name=p10 sig_type=std_logic lab=XOR}
 C {lab_wire.sym} 890 -410 0 0 {name=p11 sig_type=std_logic lab=BUF}
