@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 P 4 5 300 -540 300 -360 720 -360 720 -540 300 -540 {}
 T {DUMMIES} 470 -525 0 0 0.3 0.3 {}
@@ -33,7 +32,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {iopin.sym} 220 -380 0 1 {name=p2 lab=VDD}
@@ -48,7 +47,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 410 -170 3 0 {name=RFB2
@@ -58,7 +57,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 490 -170 3 0 {name=RFB3
@@ -68,7 +67,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 380 -400 3 0 {name=RDMY1[7:0]
@@ -78,7 +77,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 570 -170 3 0 {name=RFB6
@@ -88,7 +87,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 660 -170 3 0 {name=RFB7
@@ -98,7 +97,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 760 -170 3 0 {name=RFB8
@@ -108,7 +107,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {sg13g2_pr/rhigh.sym} 870 -170 3 0 {name=RFB9
@@ -118,7 +117,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
 C {lab_wire.sym} 670 -380 0 1 {name=p6 sig_type=std_logic lab=VDD}
@@ -130,6 +129,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
-body=sub!
+body=VSS
 
 }
+C {iopin.sym} 220 -340 0 1 {name=p8 lab=VSS}
