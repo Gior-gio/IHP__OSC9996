@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 770 -180 830 -180 {lab=RST}
 N 1040 -240 1140 -240 {lab=SPIKE}
@@ -60,6 +59,7 @@ N 720 -300 720 -240 {lab=COMP}
 N 680 -240 720 -240 {lab=COMP}
 N 720 -240 830 -240 {lab=COMP}
 N 720 -300 780 -300 {lab=COMP}
+N 240 -590 240 -560 {lab=VDD}
 C {integrator.sym} 120 -80 0 0 {name=xINT}
 C {spike_generator.sym} 940 -210 0 0 {name=xSPK}
 C {iopin.sym} 80 -440 0 1 {name=p2 lab=VDD}
@@ -78,3 +78,4 @@ C {threshold_comparator.sym} 600 -240 0 0 {name=xCOMP}
 C {opin.sym} 780 -300 0 0 {name=p10 lab=COMP
 =======
 C \{opin.sym}
+C {lab_wire.sym} 240 -590 0 0 {name=p11 sig_type=std_logic lab=VSS}

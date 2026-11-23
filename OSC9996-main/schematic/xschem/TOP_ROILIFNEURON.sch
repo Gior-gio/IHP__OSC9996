@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 P 4 5 40 -1200 40 -80 640 -80 640 -1200 40 -1200 {}
 P 4 5 700 -1200 700 -80 1180 -80 1180 -1200 700 -1200 {}
